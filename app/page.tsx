@@ -106,8 +106,6 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
-
       <main className="pb-10">
         <HeroSection />
 
@@ -192,10 +190,9 @@ export default function Home() {
             />
           </div>
         </SectionCard>
-      </main>
 
-      <ClosingSection />
-      <Footer />
+        <ClosingSection />
+      </main>
     </>
   );
 }

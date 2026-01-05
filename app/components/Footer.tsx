@@ -1,3 +1,4 @@
+"use client";
 
 import Image from "next/image";
 import { useLanguage } from "../context/LanguageContext";
@@ -22,12 +23,12 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="hidden md:block">
-                    <p className="mb-4 text-xs text-gray-700">Categories</p>
+                    <p className="mb-4 text-xs text-gray-700">{t('footer.categories')}</p>
                     <div className="space-y-2 text-black flex flex-col">
-                        <Link href="/01">Start, Safety & Pregnancy Decisions</Link>
-                        <Link href="/02">Prenatal Care: Access & How It Works</Link>
-                        <Link href="/03">Everyday Pregnancy Care</Link>
-                        <Link href="/04">Paying for Care, Paperwork & Support</Link>
+                        <Link href="/01">{t('navbar.menu.start')}</Link>
+                        <Link href="/02">{t('navbar.menu.prenatal')}</Link>
+                        <Link href="/03">{t('navbar.menu.everyday')}</Link>
+                        <Link href="/04">{t('navbar.menu.paying')}</Link>
                     </div>
                 </div>
                 <div>
@@ -41,14 +42,14 @@ export default function Footer() {
             </div>
 
             <div className="mt-18 w-[90%] md:w-[80%] lg:w-[60%] mx-auto text-center text-[.7rem] text-gray-800">
-                Free, confidential community resource for Dawson County. Information only — not medical or legal advice.
+                {t('footer.disclaimer')}
                 <br /> <br />
-                Updated: March 2025
+                {t('footer.updated')}
             </div>
 
             <div className="flex items-center justify-between mt-6">
-                <Link href="/privacy-policy" className="text-xs text-gray-700">Privacy Policy</Link>
-                <Link href="/terms-of-use" className="text-xs text-gray-700">Terms of Use</Link>
+                <Link href="/privacy-policy" className="text-xs text-gray-700">{t('footer.privacy')}</Link>
+                <Link href="/terms-of-use" className="text-xs text-gray-700">{t('footer.terms')}</Link>
             </div>
         </footer>
     );

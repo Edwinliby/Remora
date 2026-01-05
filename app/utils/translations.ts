@@ -43,7 +43,6 @@ export const translations = {
         importantInfo: "Important Information to Keep",
       },
     },
-    home: {},
     footer: {
       explore: "Pages",
       home: "Home",
@@ -51,7 +50,12 @@ export const translations = {
       contact: "Contact",
       language: "Language",
       privacy: "Privacy Policy",
+      terms: "Terms of Use",
       rights: "Remora. All specific rights reserved.",
+      categories: "Categories",
+      disclaimer:
+        "Free, confidential community resource for Dawson County. Information only — not medical or legal advice.",
+      updated: "Updated: March 2025",
     },
     closing: {
       notAlone: "You are not alone.",
@@ -104,16 +108,21 @@ export const translations = {
         importantInfo: "Macluumaad Muhiim ah oo la hayo",
       },
     },
-    home: {},
     footer: {
       explore: "Baadh",
       home: "Guriga",
+      resources: "Kheyraadka",
       about: "Nagu Saabsan",
       services: "Adeegyada",
       contact: "Xiriirka",
       language: "Luqadda",
       privacy: "Siyaasadda Asturnaanta",
+      terms: "Shuruudaha Isticmaalka",
       rights: "Remora. Dhammaan xuquuqaha gaarka ah waa la xifdiyey.",
+      categories: "Qaybaha",
+      disclaimer:
+        "Kheyraadka bulshada ee bilaashka ah, qarsoodiga ah ee Degmada Dawson. Macluumaad kaliya — maaha talo caafimaad ama sharci.",
+      updated: "La cusbooneysiiyay: Maarso 2025",
     },
     closing: {
       notAlone: "Keligood ma tihid.",
@@ -164,16 +173,21 @@ export const translations = {
         importantInfo: "Información Importante para Guardar",
       },
     },
-    home: {},
     footer: {
       explore: "Explorar",
       home: "Inicio",
+      resources: "Recursos",
       about: "Sobre Nosotros",
       services: "Servicios",
       contact: "Contacto",
       language: "Idioma",
       privacy: "Política de Privacidad",
+      terms: "Términos de Uso",
       rights: "Remora. Todos los derechos específicos reservados.",
+      categories: "Categorías",
+      disclaimer:
+        "Recurso comunitario gratuito y confidencial para el condado de Dawson. Solo información, no asesoramiento médico o legal.",
+      updated: "Actualizado: Marzo 2025",
     },
     closing: {
       notAlone: "No estás sola.",

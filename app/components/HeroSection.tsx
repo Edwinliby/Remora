@@ -110,7 +110,7 @@ export default function HeroSection() {
 
                 <div className="absolute top-0 md:top-16 left-0 right-0 px-8 py-16 text-center">
                     <h2 className="text-lg font-bold md:text-2xl lg:text-3xl text-[#FF7979]">
-                        Pregnancy Care and Support Guide
+                        {t('hero.introCard.title')}
                     </h2>
 
                     <div className="relative mt-8 md:mt-14 max-w-[1200px] mx-auto">
@@ -130,7 +130,7 @@ export default function HeroSection() {
                         </span>
 
                         <p className="z-10 absolute top-[10px] px-6 md:px-12 py-6 md:py-12 md:text-base lg:text-lg leading-relaxed text-[#530006]">
-                            This guide is designed to help people navigate pregnancy with clear, practical information and support. The pregnancy information can be helpful anywhere, and the resource directory focuses on services in and around Lexington and North Platte, where many families go for care and support.
+                            {t('hero.introCard.text')}
                         </p>
                     </div>
                 </div>

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "./context/LanguageContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -9,8 +11,15 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Remora",
-  description: "Pregnancy care application",
+  title: {
+    template: '%s | Remora',
+    default: 'Remora - Pregnancy Care & Support',
+  },
+  description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +33,9 @@ export default function RootLayout({
         className={`${montserrat.variable} antialiased`}
       >
         <LanguageProvider>
+          <Navbar />
           {children}
+          <Footer />
         </LanguageProvider>
       </body>
     </html>
