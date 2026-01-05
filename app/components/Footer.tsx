@@ -9,11 +9,11 @@ export default function Footer() {
 
     return (
         <footer className="px-6 pt-12 pb-4 text-sm text-gray-500">
-            <div className="mb-8">
+            <Link href="/" className="mb-6">
                 <Image src="/logo.png" alt="Logo" width={40} height={40} className="grayscale opacity-70" />
-            </div>
+            </Link>
 
-            <div className="flex justify-between md:justify-around gap-8">
+            <div className="flex justify-between md:justify-around gap-8 mt-4">
                 <div>
                     <p className="mb-4 text-xs text-gray-700">{t('footer.explore')}</p>
                     <div className="space-y-2 text-black flex flex-col">

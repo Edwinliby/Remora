@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: '/icon1.png',
+    apple: '/icon1.png',
   },
 };
 

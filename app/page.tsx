@@ -9,11 +9,12 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import { useLanguage } from "./context/LanguageContext";
 
-import { sectionData } from "./utils/sectionData";
+import { sectionData as allSectionData } from "./utils/sectionData";
 import AccordionGroup from "./components/AccordionGroup";
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const sectionData = allSectionData[language as keyof typeof allSectionData] || allSectionData.en;
 
   const renderSectionContent = (item: any) => {
     if (item.variant === 'extra-support-card') {

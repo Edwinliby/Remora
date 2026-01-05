@@ -120,29 +120,27 @@ export default function Navbar() {
                 className={`fixed top-0 left-0 z-[999] flex h-[100dvh] w-[100vw] flex-col bg-white transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                <div className="flex-none flex items-center justify-between px-6 py-4">
-                    <button
-                        className="text-gray-900 focus:outline-none"
-                        onClick={() => setIsMenuOpen(false)}
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-8 w-8">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
+                <button
+                    className="absolute top-3 right-3 text-gray-900 focus:outline-none z-50 p-2 bg-white shadow-sm rounded-full"
+                    onClick={() => setIsMenuOpen(false)}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-8 w-8">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
 
-                <div className="flex-1 overflow-y-auto px-6 pb-20">
+                <div className="flex-1 overflow-y-auto px-6 pb-20 pt-18">
                     {/* Header Image Placeholder */}
-                    <div className="mb-8 overflow-hidden rounded-lg mt-2">
+                    <div className="mb-8 overflow-hidden rounded-lg">
                         <Image src="/test.png" alt="Pregnancy Support" width={600} height={400} className="h-auto w-full object-cover" />
                     </div>
 
-                    <div className="flex items-center justify-between mb-8">
-                        <h2 className="text-3xl font-normal text-gray-800">{t('navbar.menu.resourceList')}</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-400">
+                    <Link href="/resources" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-between mb-8 group cursor-pointer">
+                        <h2 className="text-3xl font-normal text-gray-800 group-hover:text-rose-500 transition-colors">{t('navbar.menu.resourceList')}</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-400 group-hover:text-rose-500 transition-colors">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
-                    </div>
+                    </Link>
 
                     <div className="space-y-12">
                         {menuItems.map((section, idx) => (
