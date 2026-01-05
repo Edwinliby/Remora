@@ -90,7 +90,7 @@ export default function Navbar() {
             className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ${isScrolled ? "bg-white/50 backdrop-blur-sm shadow-xs" : "bg-transparent"
                 }`}
         >
-            <Link href="/" className="w-10">
+            <Link href="/" className="w-10 h-10">
                 <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
             </Link>
 

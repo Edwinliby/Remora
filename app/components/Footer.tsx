@@ -9,9 +9,9 @@ export default function Footer() {
 
     return (
         <footer className="px-6 pt-12 pb-4 text-sm text-gray-500">
-            <Link href="/" className="mb-6">
+            {/* <Link href="/" className="mb-6">
                 <Image src="/logo.png" alt="Logo" width={40} height={40} className="grayscale opacity-70" />
-            </Link>
+            </Link> */}
 
             <div className="flex justify-between md:justify-around gap-8 mt-4">
                 <div>

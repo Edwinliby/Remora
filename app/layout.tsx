@@ -17,8 +17,27 @@ export const metadata: Metadata = {
   },
   description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
   icons: {
-    icon: '/icon1.png',
-    apple: '/icon1.png',
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
+  openGraph: {
+    title: 'Remora - Pregnancy Care & Support',
+    description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
+    images: [
+      {
+        url: '/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'Remora Logo',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Remora - Pregnancy Care & Support',
+    description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
+    images: ['/logo.png'],
   },
 };
 
