@@ -35,7 +35,7 @@ export default function SectionCard({
                 />
             </div>
 
-            <div className="mb-2 text-5xl font-bold text-rose-300 opacity-50">{number}</div>
+            <div className="mb-2 text-5xl font-bold text-primary opacity-50">{number}</div>
             <h2 className="mb-4 text-2xl font-bold text-gray-800">
                 {title}
             </h2>

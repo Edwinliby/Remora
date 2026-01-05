@@ -63,7 +63,7 @@ export default function HeroSection() {
                         } as React.CSSProperties}
                     >
                         <Image
-                            src="/flower.png"
+                            src="/petal.png"
                             alt=""
                             width={100}
                             height={100}
@@ -76,32 +76,32 @@ export default function HeroSection() {
             {/* Static Content (z-10 to stay above flowers) */}
             <div className="relative z-1 px-6 pt-24 py-8 md:py-16 gap-32 md:gap-20 lg:gap-28 flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center gap-4">
-                    <div className="inline-block rounded-full bg-[#FFEFF6] px-4 py-2 text-xs font-medium text-[#530006] border border-[#FFC4DC]">
+                    <div className="inline-block rounded-full bg-primary/20 px-4 py-2 text-xs font-medium text-[#002853] border border-primary/40">
                         {t('hero.badge')}
                     </div>
-                    <h1 className="w-full md:w-[90%] lg:w-[60%] text-[1.35rem] md:text-4xl xl:text-5xl font-medium leading-tight text-[#FF7979]">
+                    <h1 className="w-full md:w-[90%] lg:w-[60%] text-[1.35rem] md:text-4xl xl:text-5xl font-medium leading-tight text-primary">
                         {t('hero.title')}
                     </h1>
-                    <p className="mt-2 text-sm md:text-base text-[#530006]">
+                    <p className="mt-2 text-sm md:text-base text-[#002853]">
                         {t('hero.subtitle')}
                     </p>
                 </div>
 
                 <div className="w-full md:w-fit flex flex-col items-center justify-center gap-8 mt-6">
-                    <button className="rounded-lg bg-[#FF7979] w-[95%] px-8 py-4 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
+                    <button className="rounded-lg bg-primary w-[95%] px-8 py-4 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
                         {t('hero.cta')}
                     </button>
-                    {/* Language buttons moved to bottom of section */}<div className="flex justify-center gap-4 text-xs font-medium text-rose-400 pb-10">
-                        <button onClick={() => setLanguage('en')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'en' ? 'bg-rose-100' : 'bg-white'}`}>English</button>
-                        <button onClick={() => setLanguage('so')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'so' ? 'bg-rose-100' : 'bg-white'}`}>Soomali</button>
-                        <button onClick={() => setLanguage('es')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'es' ? 'bg-rose-100' : 'bg-white'}`}>Español</button>
+                    {/* Language buttons moved to bottom of section */}<div className="flex justify-center gap-4 text-xs font-medium text-primary pb-10">
+                        <button onClick={() => setLanguage('en')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'en' ? 'bg-primary/20' : 'bg-white'}`}>English</button>
+                        <button onClick={() => setLanguage('so')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'so' ? 'bg-primary/20' : 'bg-white'}`}>Soomali</button>
+                        <button onClick={() => setLanguage('es')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'es' ? 'bg-primary/20' : 'bg-white'}`}>Español</button>
                     </div>
                 </div>
             </div>
 
             <div className="relative mt-16">
                 <Image
-                    src="./bgInfo.svg"
+                    src="/bgInfo.svg"
                     alt="bg image"
                     width={100}
                     height={100}
@@ -109,27 +109,26 @@ export default function HeroSection() {
                 />
 
                 <div className="absolute top-0 md:top-16 left-0 right-0 px-8 py-16 text-center">
-                    <h2 className="text-lg font-bold md:text-2xl lg:text-3xl text-[#FF7979]">
+                    <h2 className="text-lg font-bold md:text-2xl lg:text-3xl text-primary">
                         {t('hero.introCard.title')}
                     </h2>
 
                     <div className="relative mt-8 md:mt-14 max-w-[1200px] mx-auto">
-                        <div className="w-full h-full md:h-[200px]">
+                        <div className="w-full h-[200px] md:h-fit">
                             <Image
-                                src="./infoBg.svg"
+                                src="/infoBg.svg"
                                 alt="bg image"
                                 width={100}
-                                height={100}
+                                height={200}
                                 className="w-full h-full object-contain md:object-cover object-top"
                             />
-                            <span className="bg-linear-to-t from-[#FFE6F1] to-transparent absolute inset-0" />
                         </div>
 
-                        <span className="absolute top-[6px] left-1/2 z-10 flex h-8 w-8 md:h-12 md:w-12 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-rose-200 border-4 md:border-6 md:text-lg border-pink-50 text-[#FF928C] font-bold">
+                        <span className="absolute top-[6px] left-1/2 z-10 flex h-8 w-8 md:h-12 md:w-12 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-[#A0A9FF]/50 border-4 md:border-6 md:text-lg border-[#E6E8FF] text-primary font-bold">
                             !
                         </span>
 
-                        <p className="z-10 absolute top-[10px] px-6 md:px-12 py-6 md:py-12 md:text-base lg:text-lg leading-relaxed text-[#530006]">
+                        <p className="z-10 absolute top-[10px] px-6 md:px-12 py-6 md:py-12 md:text-base lg:text-lg leading-relaxed text-[#1A0053]">
                             {t('hero.introCard.text')}
                         </p>
                     </div>
@@ -138,10 +137,10 @@ export default function HeroSection() {
             </div>
 
             <div className="mb-10 md:mb-0 relative top-16 md:-top-20 flex justify-center items-center gap-4 md:gap-6">
-                <Link href="#01" className="w-[55px] h-[55px] px-4 py-3 bg-white font-bold text-lg md:text-2xl text-[#FF7979] border border-[#FFC4DC] flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">01</Link>
-                <Link href="#02" className="w-[55px] h-[55px] px-4 py-3 bg-white font-bold text-lg md:text-2xl text-[#FF7979] border border-[#FFC4DC] flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">02</Link>
-                <Link href="#03" className="w-[55px] h-[55px] px-4 py-3 bg-white font-bold text-lg md:text-2xl text-[#FF7979] border border-[#FFC4DC] flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">03</Link>
-                <Link href="#04" className="w-[55px] h-[55px] px-4 py-3 bg-white font-bold text-lg md:text-2xl text-[#FF7979] border border-[#FFC4DC] flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">04</Link>
+                <Link href="#01" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">01</Link>
+                <Link href="#02" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">02</Link>
+                <Link href="#03" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">03</Link>
+                <Link href="#04" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">04</Link>
             </div>
         </section>
     );

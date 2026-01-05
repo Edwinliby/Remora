@@ -17,30 +17,6 @@ export default function Home() {
   const sectionData = allSectionData[language as keyof typeof allSectionData] || allSectionData.en;
 
   const renderSectionContent = (item: any) => {
-    if (item.variant === 'extra-support-card') {
-      return (
-        <div className="leading-relaxed">
-          <div className="border-2 border-[#FFD8D8] rounded-3xl p-6 bg-[#FFF9F9]">
-            <p className="font-medium text-[#FF7979] text-xl mb-4">Extra Support</p>
-
-            {item.intro && <p className="text-xs md:text-sm text-[#3C3C43] mb-2">{item.intro}</p>}
-
-            <ul className="list-disc space-y-1 pl-4 text-xs md:text-sm text-[#3C3C43] mb-4">
-              {item.listItems && item.listItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-            </ul>
-
-            {item.closing && <p className="text-xs md:text-sm text-[#3C3C43] mb-6">{item.closing}</p>}
-
-            {item.buttonText && (
-              <button className="w-full py-3 border border-[#FF7979] text-xs md:text-sm text-[#FF7979] rounded-xl font-medium bg-white hover:bg-[#FF7979] hover:text-white transition-colors">
-                {item.buttonText}
-              </button>
-            )}
-          </div>
-        </div>
-      );
-    }
-
     return (
       <div className="space-y-2 text-xs md:text-sm text-[#3C3C43] leading-relaxed">
         {item.intro && (Array.isArray(item.intro) ? item.intro.map((line: string, i: number) => <p key={i}>{line}</p>) : <p>{item.intro}</p>)}

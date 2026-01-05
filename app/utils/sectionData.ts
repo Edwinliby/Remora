@@ -57,21 +57,6 @@ const sectionDataEn = {
         listItems: ["Insurance status", "Immigration status", "Ability to pay"],
       },
       {
-        title: "Need Extra Help Right Now?",
-        subtitle: "Emergency care comes first",
-        intro: "Help is available if you are worried about:",
-        listItems: [
-          "Food",
-          "Housing",
-          "Transportation",
-          "Safety",
-          "Immigration concerns",
-        ],
-        closing: "You do not have to handle this alone. Support is available.",
-        variant: "extra-support-card",
-        buttonText: "Support for Special Situations",
-      },
-      {
         title: "Your pregnancy options",
         subtitle: "Learn about parenting, adoption, and pregnancy options",
         intro: [
@@ -693,21 +678,6 @@ const sectionDataEs = {
           "Estado migratorio",
           "Capacidad de pago",
         ],
-      },
-      {
-        title: "¿Necesita Ayuda Adicional Ahora Mismo?",
-        subtitle: "La atención de emergencia es lo primero",
-        intro: "Hay ayuda disponible si le preocupa:",
-        listItems: [
-          "Comida",
-          "Vivienda",
-          "Transporte",
-          "Seguridad",
-          "Problemas migratorios",
-        ],
-        closing: "No tiene que manejar esto sola. Hay apoyo disponible.",
-        variant: "extra-support-card",
-        buttonText: "Apoyo para Situaciones Especiales",
       },
       {
         title: "Sus opciones de embarazo",
@@ -1339,22 +1309,6 @@ const sectionDataSo = {
           "Xaaladda socdaalka",
           "Awoodda bixinta",
         ],
-      },
-      {
-        title: "Ma U Baahan Tahay Caawimaad Dheeraad Ah Hadda?",
-        subtitle: "Daryeelka degdegga ah ayaa ugu horreeya",
-        intro: "Caawimaad ayaa la heli karaa haddii aad ka walwalsan tahay:",
-        listItems: [
-          "Cuntada",
-          "Guriyeynta",
-          "Gaadiidka",
-          "Badbaadada",
-          "Walaaca socdaalka",
-        ],
-        closing:
-          "Ma aha inaad keligaa xalliso tan. Taageero ayaa la heli karaa.",
-        variant: "extra-support-card",
-        buttonText: "Taageero Xaaladaha Gaarka ah",
       },
       {
         title: "Ikhtiyaarkaaga uurka",

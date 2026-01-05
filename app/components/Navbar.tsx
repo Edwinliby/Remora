@@ -136,8 +136,8 @@ export default function Navbar() {
                     </div>
 
                     <Link href="/resources" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-between mb-8 group cursor-pointer">
-                        <h2 className="text-3xl font-normal text-gray-800 group-hover:text-rose-500 transition-colors">{t('navbar.menu.resourceList')}</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-400 group-hover:text-rose-500 transition-colors">
+                        <h2 className="text-3xl font-normal text-gray-800 group-hover:text-primary transition-colors">{t('navbar.menu.resourceList')}</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
                     </Link>
@@ -145,7 +145,7 @@ export default function Navbar() {
                     <div className="space-y-12">
                         {menuItems.map((section, idx) => (
                             <div key={idx}>
-                                <h3 className="text-2xl font-normal text-gray-800 mb-6 leading-tight hover:text-rose-500 transition-colors">
+                                <h3 className="text-2xl font-normal text-gray-800 mb-6 leading-tight hover:text-primary transition-colors">
                                     <a href={section.mainHref} onClick={() => setIsMenuOpen(false)}>
                                         {section.category}
                                     </a>
@@ -153,10 +153,10 @@ export default function Navbar() {
                                 <ul className="space-y-5">
                                     {section.items.map((item, i) => (
                                         <li key={i} className="flex items-start gap-3 ml-2">
-                                            <span className="mt-2 h-1.25 w-1.25 shrink-0 rounded-full bg-rose-400"></span>
+                                            <span className="mt-2 h-1.25 w-1.25 shrink-0 rounded-full bg-primary"></span>
                                             <a
                                                 href={item.href}
-                                                className="text-sm text-gray-600 hover:text-rose-500 transition-colors leading-relaxed"
+                                                className="text-sm text-gray-600 hover:text-primary transition-colors leading-relaxed"
                                                 onClick={() => setIsMenuOpen(false)}
                                             >
                                                 {item.label}

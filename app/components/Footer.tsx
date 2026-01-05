@@ -8,11 +8,7 @@ export default function Footer() {
     const { t, setLanguage } = useLanguage();
 
     return (
-        <footer className="px-6 pt-12 pb-4 text-sm text-gray-500">
-            {/* <Link href="/" className="mb-6">
-                <Image src="/logo.png" alt="Logo" width={40} height={40} className="grayscale opacity-70" />
-            </Link> */}
-
+        <footer className="px-6 pb-4 text-sm text-gray-500">
             <div className="flex justify-between md:justify-around gap-8 mt-4">
                 <div>
                     <p className="mb-4 text-xs text-gray-700">{t('footer.explore')}</p>
@@ -34,9 +30,9 @@ export default function Footer() {
                 <div>
                     <p className="mb-4 text-xs text-gray-700">{t('footer.language')}</p>
                     <ul className="space-y-2 text-black cursor-pointer">
-                        <li onClick={() => setLanguage('en')} className="hover:text-rose-500 transition-colors">English</li>
-                        <li onClick={() => setLanguage('es')} className="hover:text-rose-500 transition-colors">Español</li>
-                        <li onClick={() => setLanguage('so')} className="hover:text-rose-500 transition-colors">Soomali</li>
+                        <li onClick={() => setLanguage('en')} className="hover:text-primary transition-colors">English</li>
+                        <li onClick={() => setLanguage('es')} className="hover:text-primary transition-colors">Español</li>
+                        <li onClick={() => setLanguage('so')} className="hover:text-primary transition-colors">Soomali</li>
                     </ul>
                 </div>
             </div>

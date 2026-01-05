@@ -40,24 +40,24 @@ export default function Accordion({ title, subtitle, children, isOpen, onToggle,
   }, [active]);
 
   return (
-    <div id={id} ref={containerRef} className="border-b border-rose-100 last:border-0 scroll-mt-32">
+    <div id={id} ref={containerRef} className="border-b border-primary last:border-0 scroll-mt-32">
       <button
-        className="flex w-full items-center justify-between py-4 text-left font-medium text-rose-500 transition-colors hover:text-rose-600 focus:outline-none"
+        className="flex w-full items-center justify-between py-4 text-left font-medium text-primary transition-colors hover:text-primary focus:outline-none"
         onClick={handleToggle}
       >
         <div className="flex flex-col">
-          <span className="text-base md:text-lg text-[#FF7979] mb-2">{title}</span>
+          <span className="text-base md:text-lg text-primary mb-2">{title}</span>
           {subtitle && <span className="text-xs md:text-sm text-gray-800 font-normal mt-1">{subtitle}</span>}
         </div>
         <span
-          className={`transform transition-transform duration-300 flex items-center justify-center ${variant === 'sub' ? 'w-auto h-auto' : 'w-8 h-8 rounded-full'} ${variant === 'extra-support-card' ? 'bg-rose-50' : (variant === 'sub' ? '' : 'bg-[#FFF7FB]')} ${active ? "rotate-180" : ""}`}
+          className={`transform transition-transform duration-300 flex items-center justify-center ${variant === 'sub' ? 'w-auto h-auto' : 'w-8 h-8 bg-primary/10 rounded-full'} ${active ? "rotate-180" : ""}`}
         >
           {variant === 'sub' ? (
             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L7 7L13 1Z" stroke="#FF7979" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M1 1L7 7L13 1Z" stroke="var(--color-primary)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           ) : (
-            <TiArrowSortedDown size={20} color="#FF7979" />
+            <TiArrowSortedDown size={20} color="var(--color-primary)" />
           )}
         </span>
       </button>
