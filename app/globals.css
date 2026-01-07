@@ -12,7 +12,40 @@
   --color-primary: #A0A9FF;
 }
 
+::selection {
+  background-color: #c0c5f0;
+  color: #1A0053;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #A0A9FF;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8b95f2;
+}
+
+/* Custom Focus Ring for Keyboard Navigation */
+:focus-visible {
+  outline: 3px solid #a2a8d8;
+  outline-offset: 2px;
+}
+
 html {
+  scrollbar-width: thin;
+  scrollbar-color: #A0A9FF transparent;
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
   overflow-x: hidden;

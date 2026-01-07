@@ -10,7 +10,7 @@ export const translations = {
       cta: "View resource Guide",
       introCard: {
         title: "Pregnancy Care and Support Guide",
-        text: "This guide is designed to help people navigate pregnancy with clear, practical information and support. The pregnancy information can be helpful anywhere, and the resource directory focuses on services in and around Lexington and North Platte, where many families go for care and support.",
+        text: "This guide is designed to help people navigate pregnancy with clear, practical information and support. It can help you get started, find insurance or care, understand pregnancy and medical visits, take care of yourself, and find help along the way.\nYou can use this guide anywhere, at any time, and in any order.\n This guide also includes a separate Resource Guide that connects you directly to organizations that support people during pregnancy. The Resource Guide lists phone numbers, locations, and services in and around Lexington and North Platte, Nebraska.\n You do not need to read everything at once. You can come back to this guide and the Resource Guide whenever you need them.",
       },
     },
     navbar: {
@@ -63,6 +63,23 @@ export const translations = {
       comeBack: "Come back to this guide anytime.",
       wishYouBest: "We wish you the best during your pregnancy.",
     },
+    contactPage: {
+      title: "Contact Us",
+      subtitle: "We are here to help with any questions you may have.",
+      info: {
+        title: "Get in Touch",
+        email: "support@remora.com",
+        phone: "+1 (555) 123-4567",
+        address: "Lexington & North Platte, NE",
+        hours: "Mon-Fri 9am - 5pm",
+      },
+      form: {
+        name: "Name",
+        email: "Email",
+        message: "Message",
+        submit: "Send Message",
+      },
+    },
   },
   so: {
     hero: {
@@ -74,7 +91,7 @@ export const translations = {
       cta: "Eeg Hagaha Kheyraadka",
       introCard: {
         title: "Hagaha Daryeelka iyo Taageerada Uurka",
-        text: "Hagahan waxaa loo qaabeeyey inuu dadka ka caawiyo inay uuraan macluumaad cad, oo la taaban karo iyo taageero. Macluumaadka uurka wuxuu noqon karaa mid waxtar leh meel kasta, iyo hagaha kheyraadka wuxuu diiradda saarayaa adeegyada gudaha iyo hareeraha Lexington iyo North Platte, halkaas oo qoysas badan ay u aadaan daryeel iyo taageero.",
+        text: "Hagahan waxaa loo qaabeeyey inuu dadka ka caawiyo inay uuraan macluumaad cad, oo la taaban karo iyo taageero. Waxay kaa caawin kartaa inaad bilowdo, hesho caymis ama daryeel, fahamto uurka iyo booqashooyinka caafimaadka, daryeesho naftaada, oo aad hesho caawimaad inta aad ku jirto.\nWaxaad u isticmaali kartaa hagahan meel kasta, wakhti kasta, iyo nidaam kasta.\n Hagahan wuxuu sidoo kale ku jiraa Hagaha Kheyraadka oo gaar ah oo si toos ah kugu xiraya ururada taageera dadka inta lagu jiro uurka. Hagaha Kheyraadka wuxuu liis gareeyaa lambarada taleefanka, goobaha, iyo adeegyada gudaha iyo hareeraha Lexington iyo North Platte, Nebraska.\n Uma baahnid inaad wax walba hal mar wada akhriso. Waxaad ku soo laaban kartaa hagahan iyo Hagaha Kheyraadka mar kasta oo aad u baahato.",
       },
     },
     navbar: {
@@ -130,6 +147,23 @@ export const translations = {
       comeBack: "Kusoo laabo hagahan wakhti kasta.",
       wishYouBest: "Waxaan kuu rajeynaynaa wanaag inta aad uurka leedahay.",
     },
+    contactPage: {
+      title: "Nala Soo Xiriir",
+      subtitle: "Waxaan u joognaa inaan kaa caawinno su'aalaha aad qabtid.",
+      info: {
+        title: "Nala soo xiriir",
+        email: "support@remora.com",
+        phone: "+1 (555) 123-4567",
+        address: "Lexington & North Platte, NE",
+        hours: "Isniin-Jimco 9subaxnimo - 5galabnimo",
+      },
+      form: {
+        name: "Magaca",
+        email: "Iimaylka",
+        message: "Fariinta",
+        submit: "Dir Fariinta",
+      },
+    },
   },
   es: {
     hero: {
@@ -140,7 +174,7 @@ export const translations = {
       cta: "Ver Guía de Recursos",
       introCard: {
         title: "Guía de Apoyo y Atención durante el Embarazo",
-        text: "Esta guía está diseñada para ayudar a las personas a navegar el embarazo con información clara y práctica y apoyo. La información sobre el embarazo puede ser útil en cualquier lugar, y el directorio de recursos se centra en los servicios en y alrededor de Lexington y North Platte, donde muchas familias van para recibir atención y apoyo.",
+        text: "Esta guía está diseñada para ayudar a las personas a navegar el embarazo con información clara y práctica y apoyo. Puede ayudarla a comenzar, encontrar seguro o atención, entender el embarazo y las visitas médicas, cuidarse a sí misma y encontrar ayuda en el camino.\nPuede usar esta guía en cualquier lugar, en cualquier momento y en cualquier orden.\nEsta guía también incluye una Guía de Recursos separada que la conecta directamente con organizaciones que apoyan a las personas durante el embarazo. La Guía de Recursos enumera números de teléfono, ubicaciones y servicios en y alrededor de Lexington y North Platte, Nebraska.\nNo necesita leer todo a la vez. Puede volver a esta guía y a la Guía de Recursos cuando los necesite.",
       },
     },
     navbar: {
@@ -194,6 +228,24 @@ export const translations = {
       supportAvailable: "Ayuda y apoyo están disponibles.",
       comeBack: "Vuelve a esta guía en cualquier momento.",
       wishYouBest: "Te deseamos lo mejor durante tu embarazo.",
+    },
+    contactPage: {
+      title: "Contáctenos",
+      subtitle:
+        "Estamos aquí para ayudar con cualquier pregunta que pueda tener.",
+      info: {
+        title: "Ponerse en contacto",
+        email: "support@remora.com",
+        phone: "+1 (555) 123-4567",
+        address: "Lexington y North Platte, NE",
+        hours: "Lun-Vie 9am - 5pm",
+      },
+      form: {
+        name: "Nombre",
+        email: "Correo electrónico",
+        message: "Mensaje",
+        submit: "Enviar Mensaje",
+      },
     },
   },
 };

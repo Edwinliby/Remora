@@ -39,8 +39,10 @@ const sectionDataEn = {
         secondaryList: [
           "Try to make a prenatal appointment within 1–2 weeks",
           "Start taking a prenatal vitamin (you do not need a prescription)",
-          "Apply for health coverage if you need it (Link: Applying for Health Coverage During Pregnancy)",
+          "Apply for health coverage if you need it",
         ],
+        tertiaryTitle: "Applying for Health Coverage During Pregnancy",
+        tertiaryLink: "#section-4-3",
         closing: [
           "To apply for health coverage, you may need a pregnancy verification letter from a health care provider.",
           "Cost-saving tip: Two Rivers Public Health Department may provide the pregnancy test and the verification letter without a clinic visit.",
@@ -55,6 +57,19 @@ const sectionDataEn = {
         ],
         listTitle: "You cannot be turned away because of:",
         listItems: ["Insurance status", "Immigration status", "Ability to pay"],
+      },
+      {
+        title: "Need Extra Help Right Now?",
+        subtitle: "Emergency care comes first",
+        listTitle: "Help is available if you are worried about:",
+        listItems: [
+          "Food",
+          "Housing",
+          "Transportation",
+          "Safety",
+          "Immigration concerns",
+        ],
+        closing: "You do not have to handle this alone. Support is available.",
       },
       {
         title: "Your pregnancy options",
@@ -268,7 +283,6 @@ const sectionDataEn = {
           },
           {
             title: "When to Get Help Right Away",
-            intro: "Pregnancy causes many body changes.",
             listTitle: "Do not wait for your next appointment if you have:",
             listItems: [
               "Heavy bleeding",
@@ -347,13 +361,13 @@ const sectionDataEn = {
               "Take one prenatal vitamin every day",
               "Take it with food if it upsets your stomach",
             ],
+            secondaryTitle: "You can say:",
+            secondaryList: ["“This vitamin makes me feel sick.”"],
             closing: [
               "If you forget sometimes, that is okay.",
               "If vitamins make you sick, tell your provider.",
               "Other options are available.",
             ],
-            secondaryTitle: "You can say:",
-            secondaryList: ["“This vitamin makes me feel sick.”"],
           },
           {
             title: "Rest, Work, and Daily Life",
@@ -402,12 +416,12 @@ const sectionDataEn = {
               "These feelings are common — and help is available.",
             tertiaryTitle: "Tell your provider if you feel:",
             tertiaryList: ["Overwhelmed", "Very sad", "Very anxious", "Unsafe"],
-            closing: "You deserve support during pregnancy.",
             quaternaryTitle: "You can say:",
             quaternaryList: [
               "“I don’t feel like myself.”",
               "“I'm having a hard time coping.”",
             ],
+            closing: "You deserve support during pregnancy.",
           },
           {
             title: "Infections & Staying Healthy",
@@ -658,8 +672,10 @@ const sectionDataEs = {
         secondaryList: [
           "Intente concertar una cita prenatal dentro de 1 o 2 semanas",
           "Comience a tomar una vitamina prenatal (no necesita receta)",
-          "Solicite cobertura de salud si la necesita (Enlace: Solicitud de Cobertura de Salud Durante el Embarazo)",
+          "Solicite cobertura de salud si la necesita",
         ],
+        tertiaryTitle: "Solicitud de Cobertura de Salud Durante el Embarazo",
+        tertiaryLink: "#section-4-3",
         closing: [
           "Para solicitar cobertura de salud, es posible que necesite una carta de verificación de embarazo de un proveedor de atención médica.",
           "Consejo para ahorrar costos: El Departamento de Salud Pública de Two Rivers puede proporcionar la prueba de embarazo y la carta de verificación sin una visita a la clínica.",
@@ -678,6 +694,19 @@ const sectionDataEs = {
           "Estado migratorio",
           "Capacidad de pago",
         ],
+      },
+      {
+        title: "¿Necesita Ayuda Extra Ahora Mismo?",
+        subtitle: "La atención de emergencia es lo primero",
+        listTitle: "Hay ayuda disponible si le preocupa:",
+        listItems: [
+          "Comida",
+          "Vivienda",
+          "Transporte",
+          "Seguridad",
+          "Preocupaciones de inmigración",
+        ],
+        closing: "No tiene que manejar esto sola. Hay apoyo disponible.",
       },
       {
         title: "Sus opciones de embarazo",
@@ -733,7 +762,7 @@ const sectionDataEs = {
       "Cómo es la atención en diferentes partes del embarazo",
     ],
     descriptionClosing: [
-      "Esta sección también explica cómo hacer preguntas, obtenir ayuda para entender la información y hablar durante la atención.",
+      "Esta sección también explica cómo hacer preguntas, obtener ayuda para entender la información y hablar durante la atención.",
       "Usted es parte del equipo de atención.",
     ],
     accordion: [
@@ -890,7 +919,6 @@ const sectionDataEs = {
           },
           {
             title: "Cuándo Obtener Ayuda de Inmediato",
-            intro: "El embarazo causa muchos cambios en el cuerpo.",
             listTitle: "No espere a su próxima cita si tiene:",
             listItems: [
               "Sangrado abundante",
@@ -975,13 +1003,13 @@ const sectionDataEs = {
               "Tomar una vitamina prenatal todos los días",
               "Tomarla con comida si le molesta el estómago",
             ],
+            secondaryTitle: "Puede decir:",
+            secondaryList: ["“Esta vitamina me hace sentir enferma.”"],
             closing: [
               "Si se olvida a veces, está bien.",
               "Si las vitaminas la enferman, dígale a su proveedor.",
               "Hay otras opciones disponibles.",
             ],
-            secondaryTitle: "Puede decir:",
-            secondaryList: ["“Esta vitamina me hace sentir enferma.”"],
           },
           {
             title: "Descanso, Trabajo y Vida Diaria",
@@ -1031,12 +1059,12 @@ const sectionDataEs = {
               "Estos sentimientos son comunes — y hay ayuda disponible.",
             tertiaryTitle: "Dígale a su proveedor si se siente:",
             tertiaryList: ["Abrumada", "Muy triste", "Muy ansiosa", "Insegura"],
-            closing: "Usted merece apoyo durante el embarazo.",
             quaternaryTitle: "Puede decir:",
             quaternaryList: [
               "“No me siento como yo misma.”",
               "“Me está costando sobrellevarlo.”",
             ],
+            closing: "Usted merece apoyo durante el embarazo.",
           },
           {
             title: "Infecciones y Mantenerse Saludable",
@@ -1069,7 +1097,7 @@ const sectionDataEs = {
     ],
     accordion: [
       {
-        title: "Obteniendo Cobertura de Salud Durante el Embarazo",
+        title: "Obtención de Cobertura de Salud Durante el Embarazo",
         subtitle: "Cómo obtener cobertura y qué ayuda a pagar",
         intro: [
           "Hay programas que pueden ayudar a pagar la atención médica y los alimentos durante el embarazo.",
@@ -1289,8 +1317,10 @@ const sectionDataSo = {
         secondaryList: [
           "Isku day inaad sameysato ballan uurka kahor 1-2 toddobaad gudahood",
           "Bilow qaadashada fiitamiinka uurka (uma baahnid warqad dhakhtar)",
-          "Codso caymiska caafimaadka haddii aad u baahan tahay (Xiriirinta: Codsiga Caymiska Caafimaadka Inta Uurka Lagu Jiro)",
+          "Codso caymiska caafimaadka haddii aad u baahan tahay",
         ],
+        tertiaryTitle: "Codsiga Caymiska Caafimaadka Inta Uurka Lagu Jiro",
+        tertiaryLink: "#section-4-3",
         closing: [
           "Si aad u codsato caymiska caafimaadka, waxaa laga yaabaa inaad u baahato warqad caddaynta uurka oo ka timaada bixiyaha daryeelka caafimaadka.",
           "Talo badbaadinta kharashka: Waaxda Caafimaadka Dadweynaha ee Two Rivers ayaa ku siin karta baaritaanka uurka iyo warqadda caddaynta iyada oo aan booqasho rug caafimaad loo baahnayn.",
@@ -1309,6 +1339,21 @@ const sectionDataSo = {
           "Xaaladda socdaalka",
           "Awoodda bixinta",
         ],
+      },
+      {
+        title: "Ma U Baahan Tahay Caawimaad Dheeraad Ah Hadda?",
+        subtitle: "Daryeelka degdegga ah ayaa ugu horreeya",
+        listTitle:
+          "Caawimaad ayaa la heli karaa haddii aad ka walwalsan tahay:",
+        listItems: [
+          "Cuntada",
+          "Guriyeynta",
+          "Gaadiidka",
+          "Badbaadada",
+          "Walaaca socdaalka",
+        ],
+        closing:
+          "Ma aha inaad keligaa xalliso tan. Taageero ayaa la heli karaa.",
       },
       {
         title: "Ikhtiyaarkaaga uurka",
@@ -1525,7 +1570,6 @@ const sectionDataSo = {
           },
           {
             title: "Goorta La Helo Caawimaad Degdeg Ah",
-            intro: "Uurku wuxuu keenaa isbeddelo badan oo jirka ah.",
             listTitle: "Ha sugin ballantaada xigta haddii aad leedahay:",
             listItems: [
               "Dhiig-bax badan",
@@ -1612,13 +1656,13 @@ const sectionDataSo = {
               "Qaadato hal fiitamiin uurka maalin kasta",
               "Kula qaadato cunto haddii ay calooshaada xanuujiso",
             ],
+            secondaryTitle: "Waad dhihi kartaa:",
+            secondaryList: ["“Fiitaminkani wuxuu i dareensiiyaa jirro.”"],
             closing: [
               "Haddii aad illowdo mararka qaarkood, waa caadi.",
               "Haddii fiitamiinadu ku xanuujiyaan, u sheeg bixiyahaaga.",
               "Ikhtiyaarka kale ayaa la heli karaa.",
             ],
-            secondaryTitle: "Waad dhihi kartaa:",
-            secondaryList: ["“Fiitaminkani wuxuu i dareensiiyaa jirro.”"],
           },
           {
             title: "Nasashada, Shaqada, iyo Nolosha Maalinlaha ah",
@@ -1678,12 +1722,12 @@ const sectionDataSo = {
               "Walaac badan",
               "Ammaan-darro",
             ],
-            closing: "Waxaad mudan tahay taageero inta lagu jiro uurka.",
             quaternaryTitle: "Waad dhihi kartaa:",
             quaternaryList: [
               "“Ma dareemayo sidii naftayda.”",
               "“Waxaan ku dhibtoonayaa inaan la qabsado.”",
             ],
+            closing: "Waxaad mudan tahay taageero inta lagu jiro uurka.",
           },
           {
             title: "Caabuqyada & Joogitaanka Caafimaad",
@@ -1811,7 +1855,7 @@ const sectionDataSo = {
             listItems: [
               "Waxay xaqiijinaysaa inaad uur leedahay.",
               "Waxaad tan ka heli kartaa: Waaxda Caafimaadka Dadweynaha ee Two Rivers ama ballanta rugta caafimaadka",
-              "Talo badbaadinta kharashka: Caafimaadka Dadweynaha ayaa ku siin kara warqaddan iyada oo aan booqasho rug caafimaad loo baahnayn.",
+              "Talo badbaadinta kharashka: Caafimaadka Dadweynaha ayaa ku siin karta warqaddan iyada oo aan booqasho rug caafimaad loo baahnayn.",
               "Waad dhihi kartaa: “Waxaan u baahanahay warqad caddaynta uurka si aan u codsado caymiska caafimaadka.”",
             ],
             secondaryTitle: "Foom Aqoonsi",

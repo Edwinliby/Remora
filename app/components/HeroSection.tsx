@@ -20,10 +20,10 @@ export default function HeroSection() {
 
     useEffect(() => {
         // Generate random flowers only on client to avoid hydration mismatch
-        const newFlowers = Array.from({ length: 15 }).map((_, i) => ({
+        const newFlowers = Array.from({ length: 25 }).map((_, i) => ({
             id: i,
             left: Math.random() * 100, // 0-100%
-            scale: 0.2 + Math.random() * 0.8, // 0.2 - 1.0 (Varied sizes)
+            scale: 0.5 + Math.random() * 1.0, // 0.5 - 1.5 (Bigger sizes)
             duration: 15 + Math.random() * 20, // 15-35s (Slow fall)
             delay: Math.random() * 40 - 20, // -20s to +20s (Mix of already falling and waiting)
             opacity: 0.3 + Math.random() * 0.7, // 0.3-1
@@ -53,8 +53,8 @@ export default function HeroSection() {
                         className="absolute top-0"
                         style={{
                             left: `${f.left}%`,
-                            width: `${f.scale * 40}px`,
-                            height: `${f.scale * 40}px`,
+                            width: `${f.scale * 50}px`,
+                            height: `${f.scale * 50}px`,
                             opacity: 0,
                             animation: `falling-flowers ${f.duration}s linear infinite`,
                             animationDelay: `${f.delay}s`,
@@ -88,9 +88,9 @@ export default function HeroSection() {
                 </div>
 
                 <div className="w-full md:w-fit flex flex-col items-center justify-center gap-8 mt-6">
-                    <button className="rounded-lg bg-primary w-[95%] px-8 py-4 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
+                    <Link href='/resources' className="rounded-lg bg-primary w-[95%] px-8 py-4 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
                         {t('hero.cta')}
-                    </button>
+                    </Link>
                     {/* Language buttons moved to bottom of section */}<div className="flex justify-center gap-4 text-xs font-medium text-primary pb-10">
                         <button onClick={() => setLanguage('en')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'en' ? 'bg-primary/20' : 'bg-white'}`}>English</button>
                         <button onClick={() => setLanguage('so')} className={`rounded-xl border border-[#EDEDFC] px-4 py-2 text-sm font-normal text-[#4C4C4C] transition-transform hover:scale-105 active:scale-95 ${language === 'so' ? 'bg-primary/20' : 'bg-white'}`}>Soomali</button>
@@ -105,18 +105,18 @@ export default function HeroSection() {
                     alt="bg image"
                     width={100}
                     height={100}
-                    className="w-full h-[400px] xl:h-[600px] object-cover object-top"
+                    className="-z-1 absolute inset-0 w-full h-full object-cover object-top"
                 />
 
-                <div className="absolute top-0 md:top-16 left-0 right-0 px-8 py-16 text-center">
+                <div className="relative z-10 px-8 py-16 text-center">
                     <h2 className="text-lg font-bold md:text-2xl lg:text-3xl text-primary">
                         {t('hero.introCard.title')}
                     </h2>
 
-                    <div className="relative mt-8 md:mt-14 max-w-[1200px] mx-auto">
-                        <div className="w-full h-[200px] md:h-fit">
+                    <div className="relative mt-8 md:mt-14 max-w-[1200px] h-full mx-auto">
+                        <div className="-z-1 absolute inset-0 w-full h-full">
                             <Image
-                                src="/infoBg.svg"
+                                src="/cardBg.svg"
                                 alt="bg image"
                                 width={100}
                                 height={200}
@@ -124,23 +124,24 @@ export default function HeroSection() {
                             />
                         </div>
 
-                        <span className="absolute top-[6px] left-1/2 z-10 flex h-8 w-8 md:h-12 md:w-12 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-[#A0A9FF]/50 border-4 md:border-6 md:text-lg border-[#E6E8FF] text-primary font-bold">
+                        <span className="absolute top-[6px] left-1/2 z-30 flex h-8 w-8 md:h-12 md:w-12 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-[#D1D6FF] border-4 md:border-6 md:text-lg border-[#E6E8FF] text-primary font-bold">
                             !
                         </span>
 
-                        <p className="z-10 absolute top-[10px] px-6 md:px-12 py-6 md:py-12 md:text-base lg:text-lg leading-relaxed text-[#1A0053]">
+                        <p className="relative z-30 px-6 md:px-12 py-6 md:py-12 md:text-base lg:text-lg leading-relaxed text-[#1A0053]">
                             {t('hero.introCard.text')}
                         </p>
                     </div>
                 </div>
-                <span className="h-[100px] bg-linear-to-t from-white to-transparent absolute bottom-0 left-0 right-0" />
-            </div>
 
-            <div className="mb-10 md:mb-0 relative top-16 md:-top-20 flex justify-center items-center gap-4 md:gap-6">
-                <Link href="#01" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">01</Link>
-                <Link href="#02" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">02</Link>
-                <Link href="#03" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">03</Link>
-                <Link href="#04" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">04</Link>
+                <div className="relative z-30 flex justify-center items-center gap-4 md:gap-6">
+                    <Link href="#01" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">01</Link>
+                    <Link href="#02" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">02</Link>
+                    <Link href="#03" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">03</Link>
+                    <Link href="#04" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">04</Link>
+                </div>
+
+                <span className="h-[100px] bg-linear-to-t from-white to-transparent absolute bottom-0 left-0 right-0" />
             </div>
         </section>
     );

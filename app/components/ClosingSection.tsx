@@ -5,7 +5,7 @@ export default function ClosingSection() {
     const { t } = useLanguage();
 
     return (
-        <div className="relative w-full py-16 md:py-24 mt-12 mb-28">
+        <div className="relative w-full px-6 py-16 md:py-24 mt-12 mb-28">
             <div className="absolute top-0 md:-top-12 left-0 w-full h-[500px] overflow-hidden -z-1">
                 <Image
                     src="/footerBg.svg"
@@ -33,7 +33,7 @@ export default function ClosingSection() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-2xl mx-auto text-center px-6 flex flex-col gap-2">
+            <div className="relative z-10 px-3 py-12 max-w-2xl mx-auto text-center flex flex-col gap-2 rounded-b-2xl bg-linear-to-t from-white to-transparent shadow-[0_5px_5px_0px_rgba(160,184,255,.2)]">
                 <p className="text-primary text-2xl md:text-4xl font-serif">{t('closing.notAlone')}</p>
                 <p className="text-sm md:text-lg text-[#002853] font-medium leading-relaxed">
                     {t('closing.supportAvailable')}<br />

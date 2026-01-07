@@ -21,10 +21,10 @@ export default function Footer() {
                 <div className="hidden md:block">
                     <p className="mb-4 text-xs text-gray-700">{t('footer.categories')}</p>
                     <div className="space-y-2 text-black flex flex-col">
-                        <Link href="/01">{t('navbar.menu.start')}</Link>
-                        <Link href="/02">{t('navbar.menu.prenatal')}</Link>
-                        <Link href="/03">{t('navbar.menu.everyday')}</Link>
-                        <Link href="/04">{t('navbar.menu.paying')}</Link>
+                        <Link href="/#01">{t('navbar.menu.start')}</Link>
+                        <Link href="/#02">{t('navbar.menu.prenatal')}</Link>
+                        <Link href="/#03">{t('navbar.menu.everyday')}</Link>
+                        <Link href="/#04">{t('navbar.menu.paying')}</Link>
                     </div>
                 </div>
                 <div>

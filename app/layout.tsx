@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
     images: [
       {
-        url: '/logo.png',
+        url: 'https://sample-remora.netlify.app/logo.png',
         width: 800,
         height: 600,
         alt: 'Remora Logo',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Remora - Pregnancy Care & Support',
     description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
-    images: ['/logo.png'],
+    images: ['https://sample-remora.netlify.app/logo.png'],
   },
 };
 
@@ -48,6 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Remora" />
+      </head>
       <body
         className={`${montserrat.variable} antialiased`}
       >

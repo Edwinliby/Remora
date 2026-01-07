@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import Accordion from "./components/Accordion";
 import SectionCard from "./components/SectionCard";
 import ClosingSection from "./components/ClosingSection";
@@ -46,7 +47,15 @@ export default function Home() {
 
         {(item.tertiaryTitle || item.tertiaryList) && (
           <div className="mt-4">
-            {item.tertiaryTitle && <p className="font-medium mb-2">{item.tertiaryTitle}</p>}
+            {item.tertiaryTitle && (
+              item.tertiaryLink ? (
+                <Link href={item.tertiaryLink} className="font-medium mb-2 text-primary underline block hover:text-primary/80 transition-colors">
+                  {item.tertiaryTitle}
+                </Link>
+              ) : (
+                <p className="font-medium mb-2">{item.tertiaryTitle}</p>
+              )
+            )}
             {item.tertiaryIntro && <p className="mb-2">{item.tertiaryIntro}</p>}
             {item.tertiaryList && (
               <ul className="list-disc pl-5 space-y-1">
