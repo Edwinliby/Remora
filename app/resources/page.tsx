@@ -5,13 +5,21 @@ import { useLanguage } from "../context/LanguageContext";
 import { FiMapPin, FiPhone, FiFilter, FiSearch } from "react-icons/fi";
 
 // Sample Data with Location Tags
-import { SAMPLE_RESOURCES } from "../utils/resourceData";
+import { resourceData } from "../utils/resourceData";
 
-// Extract unique locations for filter tags
-const LOCATIONS = ["All", ...Array.from(new Set(SAMPLE_RESOURCES.map(r => r.location)))];
+// Extract unique locations for filter tags (start with default EN for consistency or derive from all)
+// Note: We'll derive locations dynamically inside the component if we want them localized,
+// but for now, let's keep the logic simple and maybe just use EN for the initial static set if needed,
+// OR better yet, move LOCATIONS inside the component to react to language changes.
+// For this step, I will move LOCATIONS inside the component.
 
 export default function Resources() {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
+    const SAMPLE_RESOURCES = resourceData[language] || resourceData['en'];
+
+    // Extract unique locations for filter tags
+    const LOCATIONS = ["All", ...Array.from(new Set(SAMPLE_RESOURCES.map(r => r.location)))];
+
     const [selectedLocation, setSelectedLocation] = useState("All");
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
@@ -120,8 +128,8 @@ export default function Resources() {
                                         key={loc}
                                         onClick={() => handleFilterChange(loc)}
                                         className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-left text-sm font-medium transition-all duration-200 ${selectedLocation === loc
-                                                ? "bg-indigo-50 text-[var(--color-primary)]"
-                                                : "text-gray-600 hover:bg-gray-50 hover:translate-x-1"
+                                            ? "bg-indigo-50 text-[var(--color-primary)]"
+                                            : "text-gray-600 hover:bg-gray-50 hover:translate-x-1"
                                             }`}
                                     >
                                         {loc}

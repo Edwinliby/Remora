@@ -9,7 +9,7 @@ export const translations = {
         "This guide is here to help you get started, even if things feel complicated.",
       cta: "View resource Guide",
       introCard: {
-        title: "Pregnancy Care and Support Guide",
+        title: "Pregnancy Care and Resource Guide",
         text: "This guide is designed to help people navigate pregnancy with clear, practical information and support. It can help you get started, find insurance or care, understand pregnancy and medical visits, take care of yourself, and find help along the way.\nYou can use this guide anywhere, at any time, and in any order.\n This guide also includes a separate Resource Guide that connects you directly to organizations that support people during pregnancy. The Resource Guide lists phone numbers, locations, and services in and around Lexington and North Platte, Nebraska.\n You do not need to read everything at once. You can come back to this guide and the Resource Guide whenever you need them.",
       },
     },
@@ -90,7 +90,7 @@ export const translations = {
         "Hagahan wuxuu halkan u joogaa inuu kaa caawiyo inaad bilowdo, xitaa haddii arrimuhu dareemaan dhib.",
       cta: "Eeg Hagaha Kheyraadka",
       introCard: {
-        title: "Hagaha Daryeelka iyo Taageerada Uurka",
+        title: "Hagaha Daryeelka Uurka iyo Kheyraadka",
         text: "Hagahan waxaa loo qaabeeyey inuu dadka ka caawiyo inay uuraan macluumaad cad, oo la taaban karo iyo taageero. Waxay kaa caawin kartaa inaad bilowdo, hesho caymis ama daryeel, fahamto uurka iyo booqashooyinka caafimaadka, daryeesho naftaada, oo aad hesho caawimaad inta aad ku jirto.\nWaxaad u isticmaali kartaa hagahan meel kasta, wakhti kasta, iyo nidaam kasta.\n Hagahan wuxuu sidoo kale ku jiraa Hagaha Kheyraadka oo gaar ah oo si toos ah kugu xiraya ururada taageera dadka inta lagu jiro uurka. Hagaha Kheyraadka wuxuu liis gareeyaa lambarada taleefanka, goobaha, iyo adeegyada gudaha iyo hareeraha Lexington iyo North Platte, Nebraska.\n Uma baahnid inaad wax walba hal mar wada akhriso. Waxaad ku soo laaban kartaa hagahan iyo Hagaha Kheyraadka mar kasta oo aad u baahato.",
       },
     },
@@ -173,8 +173,8 @@ export const translations = {
         "Esta guía está aquí para ayudarle a comenzar, incluso si las cosas parecen complicadas.",
       cta: "Ver Guía de Recursos",
       introCard: {
-        title: "Guía de Apoyo y Atención durante el Embarazo",
-        text: "Esta guía está diseñada para ayudar a las personas a navegar el embarazo con información clara y práctica y apoyo. Puede ayudarla a comenzar, encontrar seguro o atención, entender el embarazo y las visitas médicas, cuidarse a sí misma y encontrar ayuda en el camino.\nPuede usar esta guía en cualquier lugar, en cualquier momento y en cualquier orden.\nEsta guía también incluye una Guía de Recursos separada que la conecta directamente con organizaciones que apoyan a las personas durante el embarazo. La Guía de Recursos enumera números de teléfono, ubicaciones y servicios en y alrededor de Lexington y North Platte, Nebraska.\nNo necesita leer todo a la vez. Puede volver a esta guía y a la Guía de Recursos cuando los necesite.",
+        title: "Guía de Atención y Recursos para el Embarazo",
+        text: "Esta guía está diseñada para ayudar a las personas a navegar el embarazo con información clara, práctica y apoyo. Puede ayudarle a comenzar, encontrar seguro o atención, entender el embarazo y las visitas médicas, cuidarse a sí misma y encontrar ayuda en el camino.\nPuede usar esta guía en cualquier lugar, en cualquier momento y en cualquier orden.\nEsta guía también incluye una Guía de Recursos separada que la conecta directamente con organizaciones que apoyan a las personas durante el embarazo. La Guía de Recursos enumera números de teléfono, ubicaciones y servicios en y alrededor de Lexington y North Platte, Nebraska.\nNo necesita leer todo a la vez. Puede volver a esta guía y a la Guía de Recursos cuando los necesite.",
       },
     },
     navbar: {

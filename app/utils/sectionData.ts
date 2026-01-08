@@ -60,7 +60,7 @@ const sectionDataEn = {
       },
       {
         title: "Need Extra Help Right Now?",
-        subtitle: "Emergency care comes first",
+        subtitle: "Extra support during pregnancy",
         listTitle: "Help is available if you are worried about:",
         listItems: [
           "Food",
@@ -69,7 +69,9 @@ const sectionDataEn = {
           "Safety",
           "Immigration concerns",
         ],
-        closing: "You do not have to handle this alone. Support is available.",
+        tertiaryTitle:
+          "Support is available. Please see the resource guide for local resources.",
+        tertiaryLink: "/resources",
       },
       {
         title: "Your pregnancy options",
@@ -178,7 +180,8 @@ const sectionDataEn = {
       {
         title: "Prenatal Care Locations",
         subtitle: "Where to get care nearby",
-        intro: "You do not need a referral to start prenatal care.",
+        intro: "See the resource guide for more information.",
+        introLink: "/resources",
         listTitle: "Kearney",
         listItems: [
           "CHI Health Good Samaritan (Maternity Center) — Labor & delivery + postpartum care (regional maternity center).",
@@ -285,7 +288,7 @@ const sectionDataEn = {
             title: "When to Get Help Right Away",
             listTitle: "Do not wait for your next appointment if you have:",
             listItems: [
-              "Heavy bleeding",
+              "Vaginal bleeding",
               "Strong belly pain",
               "Fever",
               "Severe headache or vision problems",
@@ -360,6 +363,7 @@ const sectionDataEn = {
             listItems: [
               "Take one prenatal vitamin every day",
               "Take it with food if it upsets your stomach",
+              "You can ask for gelatin-free or halal-certified prenatal vitamins",
             ],
             secondaryTitle: "You can say:",
             secondaryList: ["“This vitamin makes me feel sick.”"],
@@ -378,14 +382,18 @@ const sectionDataEn = {
               "Sit or lie down during breaks",
               "Avoid lifting very heavy items",
             ],
+            secondaryIntro:
+              "If you are pregnant during Ramadan, you may have questions about fasting.  Islam allows flexibility during pregnancy if fasting could affect your health or your baby's health.",
             secondaryTitle: "If work is hard on your body:",
             secondaryList: [
               "Tell your provider what your job requires",
               "Ask if a work note or job adjustment is needed",
             ],
             tertiaryTitle: "You can say:",
-            tertiaryList: ["“My job is very physical.”"],
-            closing: "“I’m exhausted all the time.”",
+            tertiaryList: [
+              "“My job is very physical.”",
+              "“I’m exhausted all the time.”",
+            ],
           },
           {
             title: "Movement & Exercise",
@@ -446,11 +454,11 @@ const sectionDataEn = {
   section4: {
     title: "Paying for Care, Paperwork & Support",
     description: [
-      "This section helps with insurance, paperwork, and extra support.",
-      "Many people need help paying for care, understanding forms, or finding food, housing, transportation, or safety support",
-      "That is common — and help is available.",
-      "You can look at one part at a time.",
-      "You do not need to understand everything to start.",
+      "This section helps explain how to pay for care and get support.",
+      "Many people need help with insurance, paperwork, or finding food, housing, transportation, or safety support. That is common — and help is available.",
+      "This section explains how systems work and what kinds of help may be available.",
+      "The Resource Guide lists organizations that can help with coverage, benefits, paperwork, and other support.",
+      "You can look at one part at a time. You do not need to understand everything to start.",
     ],
     accordion: [
       {
@@ -1002,6 +1010,7 @@ const sectionDataEs = {
             listItems: [
               "Tomar una vitamina prenatal todos los días",
               "Tomarla con comida si le molesta el estómago",
+              "Puede pedir vitaminas prenatales sin gelatina o con certificación halal",
             ],
             secondaryTitle: "Puede decir:",
             secondaryList: ["“Esta vitamina me hace sentir enferma.”"],
@@ -1020,6 +1029,8 @@ const sectionDataEs = {
               "Siéntese o acuéstese durante los descansos",
               "Evite levantar objetos muy pesados",
             ],
+            secondaryIntro:
+              "Si está embarazada durante el Ramadán, es posible que tenga preguntas sobre el ayuno. El Islam permite flexibilidad durante el embarazo si el ayuno pudiera afectar su salud o la de su bebé.",
             secondaryTitle: "Si el trabajo es duro para su cuerpo:",
             secondaryList: [
               "Dígale a su proveedor lo que requiere su trabajo",
@@ -1655,6 +1666,7 @@ const sectionDataSo = {
             listItems: [
               "Qaadato hal fiitamiin uurka maalin kasta",
               "Kula qaadato cunto haddii ay calooshaada xanuujiso",
+              "Waxaad weydiisan kartaa fiitamiinnada uurka ee aan lahayn gelatin ama xalaal ah",
             ],
             secondaryTitle: "Waad dhihi kartaa:",
             secondaryList: ["“Fiitaminkani wuxuu i dareensiiyaa jirro.”"],
@@ -1674,6 +1686,8 @@ const sectionDataSo = {
               "Fariiso ama jiifso inta lagu jiro nasashada",
               "Ka fogow qaadista alaabta aadka u culus",
             ],
+            secondaryIntro:
+              "Haddii aad uur leedahay inta lagu jiro bisha Soonqaad (Ramadan), waxaa laga yaabaa inaad qabto su'aalo ku saabsan soonka. Islaamku wuxuu ogol yahay dabacsanaan xilliga uurka haddii soonku saameyn ku yeelan karo caafimaadkaaga ama caafimaadka ilmahaaga.",
             secondaryTitle: "Haddii shaqadu ku adag tahay jirkaaga:",
             secondaryList: [
               "U sheeg bixiyahaaga waxa shaqadaadu u baahan tahay",

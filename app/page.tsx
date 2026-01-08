@@ -20,7 +20,7 @@ export default function Home() {
   const renderSectionContent = (item: any) => {
     return (
       <div className="space-y-2 text-xs md:text-sm text-[#3C3C43] leading-relaxed">
-        {item.intro && (Array.isArray(item.intro) ? item.intro.map((line: string, i: number) => <p key={i}>{line}</p>) : <p>{item.intro}</p>)}
+        {item.intro && (Array.isArray(item.intro) ? item.intro.map((line: string, i: number) => <p key={i}>{line}</p>) : item.introLink ? <Link href={item.introLink} className="font-medium mb-2 text-primary underline block hover:text-primary/80 transition-colors">{item.intro}</Link> : <p>{item.intro}</p>)}
 
         {(item.listTitle || item.listItems) && (
           <div>
@@ -33,10 +33,10 @@ export default function Home() {
           </div>
         )}
 
-        {(item.secondaryTitle || item.secondaryList) && (
+        {(item.secondaryIntro || item.secondaryTitle || item.secondaryList) && (
           <div className="mt-4">
+            {item.secondaryIntro && <p className="mb-2 md:w-3/4">{item.secondaryIntro}</p>}
             {item.secondaryTitle && <p className="font-medium mb-2">{item.secondaryTitle}</p>}
-            {item.secondaryIntro && <p className="mb-2">{item.secondaryIntro}</p>}
             {item.secondaryList && (
               <ul className="list-disc pl-5 space-y-1">
                 {item.secondaryList.map((li: string, i: number) => <li key={i}>{li}</li>)}

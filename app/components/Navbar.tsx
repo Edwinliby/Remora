@@ -144,7 +144,7 @@ export default function Navbar() {
                 <div className="flex-1 overflow-y-auto px-6 pb-20 pt-18">
                     {/* Header Image Placeholder */}
                     <div className="mb-8 overflow-hidden rounded-lg">
-                        <Image src="/test.png" alt="Pregnancy Support" width={600} height={400} className="h-auto w-full object-cover" />
+                        <Image src="/1.png" alt="Pregnancy Support" width={600} height={400} className="h-auto w-full object-cover" />
                     </div>
 
                     <Link href="/resources" onClick={() => handleLinkClick('/resources')} className={`flex items-center justify-between mb-8 group cursor-pointer ${activeLink === '/resources' ? 'text-primary' : 'text-gray-800'}`}>
