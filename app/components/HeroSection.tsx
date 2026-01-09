@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../utils/translations";
 
 type Flower = {
     id: number;
@@ -17,6 +18,7 @@ type Flower = {
 export default function HeroSection() {
     const [flowers, setFlowers] = useState<Flower[]>([]);
     const { t, language, setLanguage } = useLanguage();
+    const introCard = translations[language].hero.introCard;
 
     useEffect(() => {
         // Generate random flowers only on client to avoid hydration mismatch
@@ -76,7 +78,7 @@ export default function HeroSection() {
             {/* Static Content (z-10 to stay above flowers) */}
             <div className="relative z-1 px-6 pt-24 py-8 md:py-16 gap-32 md:gap-20 lg:gap-28 flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center gap-4">
-                    <div className="inline-block rounded-full bg-primary/20 px-4 py-2 text-xs font-medium text-[#002853] border border-primary/40">
+                    <div className="inline-block rounded-full bg-primary/20 px-4 py-2 text-[.7rem] sm:text-xs font-medium text-[#002853] border border-primary/40">
                         {t('hero.badge')}
                     </div>
                     <h1 className="w-full md:w-[90%] lg:w-[60%] text-[1.35rem] md:text-4xl xl:text-5xl font-medium leading-tight text-primary">
@@ -128,9 +130,16 @@ export default function HeroSection() {
                             !
                         </span>
 
-                        <p className="relative z-30 px-6 md:px-12 py-6 md:py-12 md:text-base lg:text-lg leading-relaxed text-[#1A0053]">
-                            {t('hero.introCard.text')}
-                        </p>
+
+                        <div className="flex flex-col gap-4 py-6 md:py-12">
+                            {
+                                introCard.text.map((text, index) => (
+                                    <p key={index} className="relative z-30 px-6 md:px-12 md:text-base lg:text-lg leading-relaxed text-[#1A0053]">
+                                        {text}
+                                    </p>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
 

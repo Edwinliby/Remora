@@ -3,9 +3,12 @@ const sectionDataEn = {
     title: "Start, Safety & Pregnancy Decisions",
     description: [
       "If you are pregnant, might be pregnant, or just found out you are pregnant, you are not alone.",
-      "People have many different feelings at the start of pregnancy. Some feel happy or excited. Some feel unsure, scared, or overwhelmed.",
-      "This guide will help you get started. Here you’ll find what to do first, when to get help right away, and information about pregnancy options — without pressure.",
-      "You do not have to decide everything today. Read what feels helpful right now.",
+      "People have many different feelings at the start of pregnancy.",
+      "This section helps you get started. Here you’ll find what to do first, when to get help right away, and information about pregnancy options.",
+      "This section also includes information about warning signs, urgent concerns, and special situations.",
+      "The Resource Guide can connect you to organizations if you need testing, urgent help, or additional support.",
+      "You do not have to decide everything today.",
+      "Read what feels helpful right now.",
     ],
     accordion: [
       {
@@ -127,8 +130,10 @@ const sectionDataEn = {
       "What care looks like at different parts of pregnancy",
     ],
     descriptionClosing: [
-      "This section also explains how to ask questions, get help understanding information, and speak up during care.",
-      "You are part of the care team.",
+      "This section also includes information about care after delivery.",
+      "You’ll also find guidance on how to ask questions, get help understanding information, and speak up during care. You are part of the care team.",
+      "The Resource Guide can help you find clinics and services for prenatal and after-delivery care.",
+      "This section can be used as a reference throughout pregnancy and after birth.",
     ],
     accordion: [
       {
@@ -319,10 +324,9 @@ const sectionDataEn = {
   section3: {
     title: "Everyday Pregnancy Care",
     description: [
-      "This section focuses on everyday pregnancy care.",
-      "It covers food, rest, movement, medicines, stress, and common changes in your body.",
-      "You do not need to do everything perfectly.",
-      "Small, steady steps still help you and your baby.",
+      "This section focuses on what many people do day to day to support their health during pregnancy.",
+      "It covers food, rest, movement, medicines, stress, and common changes in your body. These everyday choices support your health and your baby’s development. You do not need to do everything perfectly. Small, steady steps still help you and your baby.",
+      "The Resource Guide includes programs and community supports related to pregnancy wellness that you may find helpful. You can return to this section anytime you have everyday questions or need reassurance.",
     ],
     accordion: [
       {
@@ -644,9 +648,12 @@ const sectionDataEs = {
     title: "Inicio, Seguridad y Decisiones sobre el Embarazo",
     description: [
       "Si está embarazada, cree que podría estarlo o acaba de enterarse, no está sola.",
-      "Las personas tienen muchos sentimientos diferentes al comienzo del embarazo. Algunas se sienten felices o emocionadas. Otras se sienten inseguras, asustadas o abrumadas.",
-      "Esta guía le ayudará a comenzar. Aquí encontrará qué hacer primero, cuándo buscar ayuda de inmediato e información sobre las opciones de embarazo, sin presión.",
-      "No tiene que decidir todo hoy. Lea lo que le resulte útil en este momento.",
+      "Las personas tienen muchos sentimientos diferentes al comienzo del embarazo.",
+      "Esta sección le ayuda a comenzar. Aquí encontrará qué hacer primero, cuándo buscar ayuda de inmediato e información sobre las opciones de embarazo.",
+      "Esta sección también incluye información sobre señales de advertencia, preocupaciones urgentes y situaciones especiales.",
+      "La Guía de Recursos puede conectarla con organizaciones si necesita pruebas, ayuda urgente o apoyo adicional.",
+      "No tiene que decidir todo hoy.",
+      "Lea lo que le resulte útil en este momento.",
     ],
     accordion: [
       {
@@ -770,8 +777,10 @@ const sectionDataEs = {
       "Cómo es la atención en diferentes partes del embarazo",
     ],
     descriptionClosing: [
-      "Esta sección también explica cómo hacer preguntas, obtener ayuda para entender la información y hablar durante la atención.",
-      "Usted es parte del equipo de atención.",
+      "Esta sección también incluye información sobre la atención después del parto.",
+      "También encontrará orientación sobre cómo hacer preguntas, obtener ayuda para entender la información y hablar durante la atención. Usted es parte del equipo de atención.",
+      "La Guía de Recursos puede ayudarla a encontrar clínicas y servicios para la atención prenatal y posparto.",
+      "Esta sección se puede utilizar como referencia durante todo el embarazo y después del nacimiento.",
     ],
     accordion: [
       {
@@ -964,10 +973,9 @@ const sectionDataEs = {
   section3: {
     title: "Cuidados Diarios del Embarazo",
     description: [
-      "Esta sección se centra en los cuidados diarios del embarazo.",
-      "Cubre alimentación, descanso, movimiento, medicamentos, estrés y cambios comunes en su cuerpo.",
-      "No necesita hacer todo perfectamente.",
-      "Los pasos pequeños y constantes ayudan a usted y a su bebé.",
+      "Esta sección se centra en lo que muchas personas hacen día a día para apoyar su salud durante el embarazo.",
+      "Cubre alimentación, descanso, movimiento, medicamentos, estrés y cambios comunes en su cuerpo. Estas elecciones diarias apoyan su salud y el desarrollo de su bebé. No necesita hacer todo perfectamente. Los pasos pequeños y constantes ayudan a usted y a su bebé.",
+      "La Guía de Recursos incluye programas y apoyos comunitarios relacionados con el bienestar en el embarazo que pueden resultarle útiles. Puede volver a esta sección en cualquier momento que tenga preguntas diarias o necesite tranquilidad.",
     ],
     accordion: [
       {
@@ -1291,9 +1299,12 @@ const sectionDataSo = {
     title: "Bilowga, Badbaadada & Go'aamada Uurka",
     description: [
       "Haddii aad uur leedahay, laga yaabo inaad uur leedahay, ama aad hadda ogaatay inaad uur leedahay, keligaa ma tihid.",
-      "Dadku waxay leeyihiin dareemo kala duwan bilowga uurka. Qaar baa dareema farxad ama raynrayn. Qaar baa dareema hubanti la'aan, cabsi, ama culays.",
-      "Hagahan ayaa kaa caawin doona inaad bilowdo. Halkan waxaad ka heli doontaa waxa marka hore la sameeyo, goorta la helo caawimaad degdeg ah, iyo macluumaad ku saabsan ikhtiyaarka uurka — iyada oo aan cadaadis lahayn.",
-      "Ma aha inaad maanta go'aan ka gaarto wax walba. Akhri waxa waxtar kuu leh hadda.",
+      "Dadku waxay leeyihiin dareemo kala duwan bilowga uurka.",
+      "Qaybtani waxay kaa caawinaysaa inaad bilowdo. Halkan waxaad ka heli doontaa waxa marka hore la sameeyo, goorta la helo caawimaad degdeg ah, iyo macluumaad ku saabsan ikhtiyaarka uurka.",
+      "Qaybtani waxay sidoo kale ku jirtaa macluumaad ku saabsan calaamadaha digniinta, walaacyada degdegga ah, iyo xaaladaha gaarka ah.",
+      "Hagaha Kheyraadka wuxuu kugu xiri karaa ururada haddii aad u baahan tahay baaritaan, caawimaad degdeg ah, ama taageero dheeraad ah.",
+      "Ma aha inaad maanta go'aan ka gaarto wax walba.",
+      "Akhri waxa waxtar kuu leh hadda.",
     ],
     accordion: [
       {
@@ -1420,8 +1431,10 @@ const sectionDataSo = {
       "Sida daryeelku u eg yahay qaybaha kala duwan ee uurka",
     ],
     descriptionClosing: [
-      "Qaybtani waxay sidoo kale sharraxaysaa sida wax loo weydiiyo, loo helo caawimaad fahamka macluumaadka, iyo in la hadlo inta lagu jiro daryeelka.",
-      "Waxaad tahay qayb ka mid ah kooxda daryeelka.",
+      "Qaybtani waxay sidoo kale ku jirtaa macluumaad ku saabsan daryeelka dhalmada kadib.",
+      "Waxaad sidoo kale heli doontaa hagitaan ku saabsan sida wax loo weydiiyo, loo helo caawimaad fahamka macluumaadka, iyo in la hadlo inta lagu jiro daryeelka. Waxaad tahay qayb ka mid ah kooxda daryeelka.",
+      "Hagaha Kheyraadka ayaa kaa caawin kara inaad hesho rugaha caafimaadka iyo adeegyada daryeelka dhalmada kahor iyo kadib.",
+      "Qaybtan waxaa loo isticmaali karaa tixraac ahaan inta lagu jiro uurka iyo dhalashada kadib.",
     ],
     accordion: [
       {
@@ -1619,10 +1632,9 @@ const sectionDataSo = {
   section3: {
     title: "Daryeelka Uurka Maalinlaha ah",
     description: [
-      "Qaybtani waxay diiradda saaraysaa daryeelka uurka maalinlaha ah.",
-      "Waxay daboolaysaa cuntada, nasashada, dhaqdhaqaaqa, daawooyinka, walbahaarka, iyo isbeddelada caadiga ah ee jirkaaga.",
-      "Uma baahnid inaad wax walba si qumman u sameyso.",
-      "Tallaabooyinka yaryar, ee joogtada ah ayaa weli caawiya adiga iyo ilmahaaga.",
+      "Qaybtani waxay diiradda saartaa waxa dad badan ay sameeyaan maalin kasta si ay u taageeraan caafimaadkooda inta lagu jiro uurka.",
+      "Waxay daboolaysaa cuntada, nasashada, dhaqdhaqaaqa, daawooyinka, walbahaarka, iyo isbeddelada caadiga ah ee jirkaaga. Doorashooyinkan maalinlaha ah waxay taageeraan caafimaadkaaga iyo koritaanka ilmahaaga. Uma baahnid inaad wax walba si sax ah u sameyso. Tallaabooyin yaryar oo joogto ah ayaa weli caawinaya adiga iyo ilmahaaga.",
+      "Hagaha Kheyraadka waxaa ku jira barnaamijyo iyo taageerooyin bulsho oo la xiriira fiyoobida uurka oo laga yaabo inaad waxtar u hesho. Waxaad ku soo laaban kartaa qaybtan wakhti kasta oo aad qabtid su'aalo maalinle ah ama aad u baahan tahay kalsooni.",
     ],
     accordion: [
       {

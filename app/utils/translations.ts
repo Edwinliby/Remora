@@ -10,7 +10,10 @@ export const translations = {
       cta: "View resource Guide",
       introCard: {
         title: "Pregnancy Care and Resource Guide",
-        text: "This guide is designed to help people navigate pregnancy with clear, practical information and support. It can help you get started, find insurance or care, understand pregnancy and medical visits, take care of yourself, and find help along the way.\nYou can use this guide anywhere, at any time, and in any order.\n This guide also includes a separate Resource Guide that connects you directly to organizations that support people during pregnancy. The Resource Guide lists phone numbers, locations, and services in and around Lexington and North Platte, Nebraska.\n You do not need to read everything at once. You can come back to this guide and the Resource Guide whenever you need them.",
+        text: [
+          "This guide is designed to help people navigate pregnancy with clear, practical information and support. It can help you get started, find insurance or care, understand pregnancy and medical visits, take care of yourself, and find help along the way. You can use this guide anywhere, at any time, and in any order.",
+          "This guide also includes a separate Resource Guide that connects you directly to organizations that support people during pregnancy. The Resource Guide lists phone numbers, locations, and services in and around Lexington and North Platte, Nebraska.",
+        ],
       },
     },
     navbar: {
@@ -19,9 +22,10 @@ export const translations = {
         prenatal: "Prenatal Care: Access & How It Works",
         everyday: "Everyday Pregnancy Care",
         paying: "Paying for Care, Paperwork & Support",
-        resourceList: "Resource List",
+        resourceList: "Resource",
       },
       items: {
+        home: "Home",
         gettingStarted: "Getting Started & Your Options",
         thinkPregnant: "If You Think You Might Be Pregnant",
         careRightAway: "If You Need Care Right Away",
@@ -91,7 +95,11 @@ export const translations = {
       cta: "Eeg Hagaha Kheyraadka",
       introCard: {
         title: "Hagaha Daryeelka Uurka iyo Kheyraadka",
-        text: "Hagahan waxaa loo qaabeeyey inuu dadka ka caawiyo inay uuraan macluumaad cad, oo la taaban karo iyo taageero. Waxay kaa caawin kartaa inaad bilowdo, hesho caymis ama daryeel, fahamto uurka iyo booqashooyinka caafimaadka, daryeesho naftaada, oo aad hesho caawimaad inta aad ku jirto.\nWaxaad u isticmaali kartaa hagahan meel kasta, wakhti kasta, iyo nidaam kasta.\n Hagahan wuxuu sidoo kale ku jiraa Hagaha Kheyraadka oo gaar ah oo si toos ah kugu xiraya ururada taageera dadka inta lagu jiro uurka. Hagaha Kheyraadka wuxuu liis gareeyaa lambarada taleefanka, goobaha, iyo adeegyada gudaha iyo hareeraha Lexington iyo North Platte, Nebraska.\n Uma baahnid inaad wax walba hal mar wada akhriso. Waxaad ku soo laaban kartaa hagahan iyo Hagaha Kheyraadka mar kasta oo aad u baahato.",
+        text: [
+          "Hagahan waxaa loo qaabeeyey inuu dadka ka caawiyo inay uuraan macluumaad cad, oo la taaban karo iyo taageero. Waxay kaa caawin kartaa inaad bilowdo, hesho caymis ama daryeel, fahamto uurka iyo booqashooyinka caafimaadka, daryeesho naftaada, oo aad hesho caawimaad inta aad ku jirto. Waxaad u isticmaali kartaa hagahan meel kasta, wakhti kasta, iyo nidaam kasta.",
+          "Hagahan wuxuu sidoo kale ku jiraa Hagaha Kheyraadka oo gaar ah oo si toos ah kugu xiraya ururada taageera dadka inta lagu jiro uurka. Hagaha Kheyraadka wuxuu liis gareeyaa lambarada taleefanka, goobaha, iyo adeegyada gudaha iyo hareeraha Lexington iyo North Platte, Nebraska.",
+          "Uma baahnid inaad wax walba hal mar wada akhriso. Waxaad ku soo laaban kartaa hagahan iyo Hagaha Kheyraadka mar kasta oo aad u baahato.",
+        ],
       },
     },
     navbar: {
@@ -100,9 +108,10 @@ export const translations = {
         prenatal: "Daryeelka Dhalmada Kahor: Gelitaanka & Sida ay u Shaqeyso",
         everyday: "Daryeelka Uurka Maalinlaha ah",
         paying: "Bixinta Daryeelka, Waraaqaha & Taageerada",
-        resourceList: "Liiska Kheyraadka",
+        resourceList: "Kheyraadka",
       },
       items: {
+        home: "Hoyga",
         gettingStarted: "Bilawga & Fursadahaaga",
         thinkPregnant: "Haddii aad U Malaynayso inaad Uur Leedahay",
         careRightAway: "Haddii aad U Baahan Tahay Daryeel Isla Markiiba",
@@ -174,7 +183,11 @@ export const translations = {
       cta: "Ver Guía de Recursos",
       introCard: {
         title: "Guía de Atención y Recursos para el Embarazo",
-        text: "Esta guía está diseñada para ayudar a las personas a navegar el embarazo con información clara, práctica y apoyo. Puede ayudarle a comenzar, encontrar seguro o atención, entender el embarazo y las visitas médicas, cuidarse a sí misma y encontrar ayuda en el camino.\nPuede usar esta guía en cualquier lugar, en cualquier momento y en cualquier orden.\nEsta guía también incluye una Guía de Recursos separada que la conecta directamente con organizaciones que apoyan a las personas durante el embarazo. La Guía de Recursos enumera números de teléfono, ubicaciones y servicios en y alrededor de Lexington y North Platte, Nebraska.\nNo necesita leer todo a la vez. Puede volver a esta guía y a la Guía de Recursos cuando los necesite.",
+        text: [
+          "Esta guía está diseñada para ayudar a las personas a navegar el embarazo con información clara, práctica y apoyo. Puede ayudarle a comenzar, encontrar seguro o atención, entender el embarazo y las visitas médicas, cuidarse a sí misma y encontrar ayuda en el camino. Puede usar esta guía en cualquier lugar, en cualquier momento y en cualquier orden.",
+          "Esta guía también incluye una Guía de Recursos separada que la conecta directamente con organizaciones que apoyan a las personas durante el embarazo. La Guía de Recursos enumera números de teléfono, ubicaciones y servicios en y alrededor de Lexington y North Platte, Nebraska.",
+          "No necesita leer todo a la vez. Puede volver a esta guía y a la Guía de Recursos cuando los necesite.",
+        ],
       },
     },
     navbar: {
@@ -183,9 +196,10 @@ export const translations = {
         prenatal: "Atención Prenatal: Acceso y Cómo Funciona",
         everyday: "Atención Diaria del Embarazo",
         paying: "Pago de Atención, Trámites y Apoyo",
-        resourceList: "Lista de Recursos",
+        resourceList: "Recursos",
       },
       items: {
+        home: "Inicio",
         gettingStarted: "Empezando y Sus Opciones",
         thinkPregnant: "Si Cree que Podría Estar Embarazada",
         careRightAway: "Si Necesita Atención de Inmediato",

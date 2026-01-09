@@ -99,17 +99,36 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ${isScrolled ? "bg-white/50 backdrop-blur-sm shadow-xs" : "bg-transparent"
+            className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ${(isScrolled && !isMenuOpen) ? "bg-white/50 backdrop-blur-sm shadow-xs" : "bg-transparent"
                 }`}
         >
-            <Link href="/" className="w-10 h-10">
+            <Link href="/" className="w-10 h-10 relative z-50">
                 <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
             </Link>
 
-            {/* Mobile Hamburger Button */}
+            {/* Desktop Center Links */}
+            <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 gap-8 items-center">
+                <Link
+                    href="/"
+                    className={`text-base font-medium transition-colors ${activeLink === '/' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+                    onClick={() => setActiveLink('/')}
+                >
+                    {t('navbar.items.home')}
+                </Link>
+                <Link
+                    href="/resources"
+                    className={`text-base font-medium transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+                    onClick={() => setActiveLink('/resources')}
+                >
+                    {t('navbar.menu.resourceList')}
+                </Link>
+            </div>
+
+            {/* Hamburger Button (Visible on all screens) */}
             <button
-                className={`text-gray-600 focus:outline-none md:hidden ${isMenuOpen ? "invisible opacity-0" : "visible opacity-100"}`}
+                className={`text-gray-600 focus:outline-none z-50 transition-opacity duration-300 ${isMenuOpen ? "opacity-0 invisible" : "opacity-100 visible"}`}
                 onClick={() => setIsMenuOpen(true)}
+                aria-label="Open menu"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -127,52 +146,60 @@ export default function Navbar() {
                 </svg>
             </button>
 
-            {/* Mobile Menu Drawer */}
+            {/* Backdrop for Menu */}
             <div
-                className={`fixed top-0 left-0 z-[999] flex h-[100dvh] w-[100vw] flex-col bg-white transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed inset-0 z-[998] bg-white/10 backdrop-blur-xs transition-opacity duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                onClick={() => setIsMenuOpen(false)}
+                aria-hidden="true"
+            />
+
+            {/* Menu Drawer (Slides from Right, Fixed Width) */}
+            <div
+                className={`fixed top-0 right-0 z-[999] flex h-[100dvh] w-[100vw] md:w-[600px] flex-col bg-white shadow-2xl transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <button
-                    className="absolute top-3 right-3 text-gray-900 focus:outline-none z-50 p-2 bg-white shadow-sm rounded-full"
+                    className="absolute top-4 right-6 text-gray-900 focus:outline-none z-50 p-2 hover:bg-gray-100 rounded-full transition-colors"
                     onClick={() => setIsMenuOpen(false)}
+                    aria-label="Close menu"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-8 w-8">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
 
-                <div className="flex-1 overflow-y-auto px-6 pb-20 pt-18">
+                <div className="flex-1 overflow-y-auto px-6 pb-20 pt-20">
                     {/* Header Image Placeholder */}
-                    <div className="mb-8 overflow-hidden rounded-lg">
+                    <div className="mb-8 overflow-hidden rounded-lg shadow-sm">
                         <Image src="/1.png" alt="Pregnancy Support" width={600} height={400} className="h-auto w-full object-cover" />
                     </div>
 
                     <Link href="/resources" onClick={() => handleLinkClick('/resources')} className={`flex items-center justify-between mb-8 group cursor-pointer ${activeLink === '/resources' ? 'text-primary' : 'text-gray-800'}`}>
-                        <h2 className={`text-3xl font-normal transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-800 group-hover:text-primary'}`}>{t('navbar.menu.resourceList')}</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-6 h-6 transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-400 group-hover:text-primary'}`}>
+                        <h2 className={`text-xl font-medium transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-800 group-hover:text-primary'}`}>{t('navbar.menu.resourceList')}</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-400 group-hover:text-primary'}`}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
                     </Link>
 
-                    <div className="space-y-12">
+                    <div className="space-y-10">
                         {menuItems.map((section, idx) => (
                             <div key={idx}>
-                                <h3 className={`text-2xl font-normal mb-6 leading-tight transition-colors ${activeLink.includes(section.mainHref) ? 'text-primary' : 'text-gray-800 hover:text-primary'}`}>
+                                <h3 className={`text-lg font-medium mb-4 leading-tight transition-colors ${activeLink.includes(section.mainHref) ? 'text-primary' : 'text-gray-800 hover:text-primary'}`}>
                                     <Link href={section.mainHref} onClick={() => handleLinkClick(section.mainHref)}>
                                         {section.category}
                                     </Link>
                                 </h3>
-                                <ul className="space-y-1 mt-3">
+                                <ul className="space-y-0.5 mt-2">
                                     {section.items.map((item, i) => {
                                         const isActive = activeLink === item.href;
                                         return (
                                             <li key={i}>
                                                 <Link
                                                     href={item.href}
-                                                    className={`group flex items-center py-2.5 pl-4 border-l-2 transition-all ml-1 ${isActive ? 'border-primary bg-primary/5' : 'border-gray-100 hover:border-primary/50'}`}
+                                                    className={`group flex items-center py-2 pl-3 border-l-2 transition-all ml-1 ${isActive ? 'border-primary bg-primary/5' : 'border-gray-100 hover:border-primary/50 hover:bg-gray-50'}`}
                                                     onClick={() => handleLinkClick(item.href)}
                                                 >
-                                                    <span className={`text-[15px] font-medium transition-colors ${isActive ? 'text-primary font-semibold' : 'text-gray-500 group-hover:text-primary'}`}>
+                                                    <span className={`text-sm font-medium transition-colors ${isActive ? 'text-primary font-semibold' : 'text-gray-500 group-hover:text-primary'}`}>
                                                         {item.label}
                                                     </span>
                                                 </Link>
