@@ -1,12 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import Accordion from "./components/Accordion";
 import SectionCard from "./components/SectionCard";
 import ClosingSection from "./components/ClosingSection";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import { useLanguage } from "./context/LanguageContext";
 
