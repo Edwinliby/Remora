@@ -72,6 +72,7 @@ const sectionDataEn = {
           "Safety",
           "Immigration concerns",
         ],
+        secondaryTitle: "You do not have to handle this alone.",
         tertiaryTitle:
           "Support is available. Please see the resource guide for local resources.",
         tertiaryLink: "/resources",
@@ -712,7 +713,7 @@ const sectionDataEs = {
       },
       {
         title: "¿Necesita Ayuda Extra Ahora Mismo?",
-        subtitle: "La atención de emergencia es lo primero",
+        subtitle: "Apoyo adicional durante el embarazo",
         listTitle: "Hay ayuda disponible si le preocupa:",
         listItems: [
           "Comida",
@@ -721,7 +722,10 @@ const sectionDataEs = {
           "Seguridad",
           "Preocupaciones de inmigración",
         ],
-        closing: "No tiene que manejar esto sola. Hay apoyo disponible.",
+        secondaryTitle: "No tiene que manejar esto sola.",
+        tertiaryTitle:
+          "Hay apoyo disponible. Consulte la guía de recursos para ver los recursos locales.",
+        tertiaryLink: "/resources",
       },
       {
         title: "Sus opciones de embarazo",
@@ -832,7 +836,8 @@ const sectionDataEs = {
       {
         title: "Ubicaciones de Atención Prenatal",
         subtitle: "Dónde obtener atención cercana",
-        intro: "No necesita una referencia para comenzar la atención prenatal.",
+        intro: "Consulte la guía de recursos para obtener más información.",
+        introLink: "/resources",
         listTitle: "Kearney",
         listItems: [
           "CHI Health Good Samaritan (Centro de Maternidad) — Trabajo de parto y parto + atención posparto (centro regional de maternidad).",
@@ -1045,8 +1050,10 @@ const sectionDataEs = {
               "Pregunte si se necesita una nota de trabajo o un ajuste laboral",
             ],
             tertiaryTitle: "Puede decir:",
-            tertiaryList: ["“Mi trabajo es muy físico.”"],
-            closing: "“Estoy agotada todo el tiempo.”",
+            tertiaryList: [
+              "“Mi trabajo es muy físico.”",
+              "“Estoy agotada todo el tiempo.”",
+            ],
           },
           {
             title: "Movimiento y Ejercicio",
@@ -1364,7 +1371,7 @@ const sectionDataSo = {
       },
       {
         title: "Ma U Baahan Tahay Caawimaad Dheeraad Ah Hadda?",
-        subtitle: "Daryeelka degdegga ah ayaa ugu horreeya",
+        subtitle: "Taageero dheeraad ah inta lagu jiro uurka",
         listTitle:
           "Caawimaad ayaa la heli karaa haddii aad ka walwalsan tahay:",
         listItems: [
@@ -1374,8 +1381,10 @@ const sectionDataSo = {
           "Badbaadada",
           "Walaaca socdaalka",
         ],
-        closing:
-          "Ma aha inaad keligaa xalliso tan. Taageero ayaa la heli karaa.",
+        secondaryTitle: "Ma aha inaad keligaa xalliso tan.",
+        tertiaryTitle:
+          "Taageero ayaa la heli karaa. Fadlan eeg hagaha kheyraadka ee agabka maxalliga ah.",
+        tertiaryLink: "/resources",
       },
       {
         title: "Ikhtiyaarkaaga uurka",
@@ -1487,7 +1496,8 @@ const sectionDataSo = {
       {
         title: "Goobaha Daryeelka Dhalmada Kahor",
         subtitle: "Halka laga helo daryeel dhow",
-        intro: "Uma baahnid gudbin si aad u bilowdo daryeelka dhalmada kahor.",
+        intro: "Eeg hagaha kheyraadka wixii macluumaad dheeraad ah.",
+        introLink: "/resources",
         listTitle: "Kearney",
         listItems: [
           "CHI Health Good Samaritan (Xarunta Umusha) — Foosha & dhalmada + daryeelka umusha kadib (xarunta umusha gobolka).",
@@ -1706,8 +1716,10 @@ const sectionDataSo = {
               "Weydii haddii qoraal shaqo ama hagaajin shaqo loo baahan yahay",
             ],
             tertiaryTitle: "Waad dhihi kartaa:",
-            tertiaryList: ["“Shaqadaydu waa mid jireed aad u badan.”"],
-            closing: "“Waan daalanahay mar walba.”",
+            tertiaryList: [
+              "“Shaqadaydu waa mid jireed aad u badan.”",
+              "“Waan daalanahay mar walba.”",
+            ],
           },
           {
             title: "Dhaqdhaqaaqa & Jimicsiga",
