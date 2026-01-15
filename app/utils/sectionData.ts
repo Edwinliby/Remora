@@ -186,7 +186,8 @@ const sectionDataEn = {
       {
         title: "Prenatal Care Locations",
         subtitle: "Where to get care nearby",
-        intro: "See the resource guide for more information.",
+        intro:
+          "You do not need a referral to start preatal care. See the resource guide for more information.",
         introLink: "/resources",
         listTitle: "Kearney",
         listItems: [
@@ -836,7 +837,8 @@ const sectionDataEs = {
       {
         title: "Ubicaciones de Atención Prenatal",
         subtitle: "Dónde obtener atención cercana",
-        intro: "Consulte la guía de recursos para obtener más información.",
+        intro:
+          "No necesita una referencia para comenzar la atención prenatal. Consulte la guía de recursos para obtener más información.",
         introLink: "/resources",
         listTitle: "Kearney",
         listItems: [
@@ -1496,7 +1498,8 @@ const sectionDataSo = {
       {
         title: "Goobaha Daryeelka Dhalmada Kahor",
         subtitle: "Halka laga helo daryeel dhow",
-        intro: "Eeg hagaha kheyraadka wixii macluumaad dheeraad ah.",
+        intro:
+          "Uma baahnid gudbin si aad u bilowdo daryeelka dhalmada kahor. Eeg hagaha kheyraadka wixii macluumaad dheeraad ah.",
         introLink: "/resources",
         listTitle: "Kearney",
         listItems: [
