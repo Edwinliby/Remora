@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     template: '%s | Remora',
     default: 'Remora - Pregnancy Care & Support',
   },
-  description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
+  description: "Support for Anyone Who Is Pregnant or Might Be Pregnant",
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
   },
   openGraph: {
     title: 'Remora - Pregnancy Care & Support',
-    description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
+    description: "Support for Anyone Who Is Pregnant or Might Be Pregnant",
     images: [
       {
         url: 'https://sample-remora.netlify.app/logo.png',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Remora - Pregnancy Care & Support',
-    description: "A comprehensive guide for pregnancy care, support, and resources in Dawson County.",
+    description: "Support for Anyone Who Is Pregnant or Might Be Pregnant",
     images: ['https://sample-remora.netlify.app/logo.png'],
   },
 };

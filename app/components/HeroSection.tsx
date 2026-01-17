@@ -143,11 +143,11 @@ export default function HeroSection() {
                     </div>
                 </div>
 
-                <div className="relative z-30 flex justify-center items-center gap-4 md:gap-6">
-                    <Link href="#01" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">01</Link>
-                    <Link href="#02" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">02</Link>
-                    <Link href="#03" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">03</Link>
-                    <Link href="#04" className="w-[65px] h-[65px] lg:w-[75px] lg:h-[75px] px-4 py-3 bg-white font-bold text-2xl md:text-4xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">04</Link>
+                <div className="relative z-30 flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                    <Link href="#01" className="w-fit px-4 py-3 bg-white font-bold text-base md:text-2xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">Getting Started</Link>
+                    <Link href="#02" className="w-fit px-4 py-3 bg-white font-bold text-base md:text-2xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">Prenatal Care</Link>
+                    <Link href="#03" className="w-fit px-4 py-3 bg-white font-bold text-base md:text-2xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">Daily Health</Link>
+                    <Link href="#04" className="w-fit px-4 py-3 bg-white font-bold text-base md:text-2xl text-primary border border-primary/40 flex items-center justify-center rounded-2xl hover:scale-105 active:scale-95 transition-transform">Paying for Care</Link>
                 </div>
 
                 <span className="h-[100px] bg-linear-to-t from-white to-transparent absolute bottom-0 left-0 right-0" />

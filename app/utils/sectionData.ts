@@ -2,13 +2,24 @@ const sectionDataEn = {
   section1: {
     title: "Start, Safety & Pregnancy Decisions",
     description: [
-      "If you are pregnant, might be pregnant, or just found out you are pregnant, you are not alone.",
-      "People have many different feelings at the start of pregnancy.",
-      "This section helps you get started. Here you’ll find what to do first, when to get help right away, and information about pregnancy options.",
-      "This section also includes information about warning signs, urgent concerns, and special situations.",
-      "The Resource Guide can connect you to organizations if you need testing, urgent help, or additional support.",
+      "If you are pregnant, might be pregnant, or just found out—you are not alone.",
+      "Many people feel unsure, scared, or overwhelmed at the start. This section helps you get started.",
+      "In this section, you can:",
+    ],
+    descriptionListItems: [
+      "Learn what to do first",
+      "Know when to get help right away",
+      "Learn about pregnancy options",
+      "Understand warning signs and urgent concerns",
+    ],
+    descriptionPreClosing: [
       "You do not have to decide everything today.",
       "Read what feels helpful right now.",
+    ],
+    descriptionLinkText: "Need testing, urgent help, or extra support?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "The Resource Guide shows places to call and go for help.",
     ],
     accordion: [
       {
@@ -120,21 +131,28 @@ const sectionDataEn = {
     ],
   },
   section2: {
-    title: "Prenatal Care: Access & How It Works",
+    title: "Prenatal care is care during pregnancy",
     description: [
-      "This section explains how prenatal care works.",
-      "You'll learn:",
+      "This section explains how it works and how to get it.",
+      "In this section, you can:",
     ],
     descriptionListItems: [
-      "Where to get prenatal care",
-      "What usually happens at visits",
-      "What care looks like at different parts of pregnancy",
+      "Find where to get prenatal care",
+      "Learn what happens at visits",
+      "Understand care at different stages of pregnancy",
+      "Learn about care after birth",
     ],
+    descriptionPreClosing: ["You will also find tips on:"],
+    descriptionPreClosingListItems: [
+      "Asking questions",
+      "Understanding medical information",
+      "Speaking up during care",
+    ],
+    descriptionPreClosingClosing: ["You are part of the care team."],
+    descriptionLinkText: "Looking for clinics or providers?",
+    descriptionLink: "/resources",
     descriptionClosing: [
-      "This section also includes information about care after delivery.",
-      "You’ll also find guidance on how to ask questions, get help understanding information, and speak up during care. You are part of the care team.",
-      "The Resource Guide can help you find clinics and services for prenatal and after-delivery care.",
-      "This section can be used as a reference throughout pregnancy and after birth.",
+      "The Resource Guide lists prenatal and after-birth care options near you.",
     ],
     accordion: [
       {
@@ -158,6 +176,9 @@ const sectionDataEn = {
       {
         title: "Choosing a Prenatal Care Provider",
         subtitle: "Where you'll get care and give birth",
+        introlinkText:
+          "See the Resource Guide for Prenatal Care Providers between Kearney and North Platte, Nebraska",
+        introlink: "/resources",
         intro: [
           "Not all clinics provide prenatal care.",
           "Not all hospitals deliver babies.",
@@ -182,37 +203,6 @@ const sectionDataEn = {
         ],
         closing:
           "Knowing the plan ahead of time helps reduce stress and surprises.\nIt is okay to ask these questions more than once.",
-      },
-      {
-        title: "Prenatal Care Locations",
-        subtitle: "Where to get care nearby",
-        intro:
-          "You do not need a referral to start preatal care. See the resource guide for more information.",
-        introLink: "/resources",
-        listTitle: "Kearney",
-        listItems: [
-          "CHI Health Good Samaritan (Maternity Center) — Labor & delivery + postpartum care (regional maternity center).",
-          "Kearney Regional Medical Center (Pregnancy & Baby / Maternity + NICU) — Labor & delivery with Level II NICU and lactation support.",
-          "Family Practice Associates (Kearney) — Prenatal care with doctors who deliver at Kearney hospitals.",
-          "Contemporary Obstetrics & Gynecology (Kearney) — OB/GYN clinic providing pregnancy care and women’s health services.",
-        ],
-        secondaryTitle: "Lexington",
-        secondaryList: [
-          "Lexington Regional Health Center (Obstetrics / Labor & Delivery) — Prenatal care through delivery and postpartum support.",
-          "Lexington Women’s Care — OB/GYN clinic with routine and high-risk obstetrics care.",
-          "Plum Creek Medical Group (Lexington) — Family medicine clinic; can provide prenatal referrals/coordination.",
-        ],
-        tertiaryTitle: "Cozad, Gothenburg & North Platte",
-        tertiaryList: [
-          "Cozad Community Medical Clinic — Family medicine clinic that includes prenatal care.",
-          "Gothenburg Health (Women’s Health / OB Services) — Prenatal care, labor & delivery, postpartum + lactation support.",
-          "Great Plains Health (Pregnancy & Childbirth / Maternity Services) — Prenatal care and hospital-based birth services in North Platte.",
-          "North Platte OBGYN, PC — OB/GYN clinic providing pregnancy care and deliveries (women’s health).",
-        ],
-        quaternaryTitle: "High-Risk Pregnancy Care",
-        quaternaryList: [
-          "CHI Health Maternal–Fetal Medicine (TeleMFM) — Specialist support for high-risk pregnancies (often via telehealth).",
-        ],
       },
       {
         title: "What Prenatal Care Usually Looks Like",
@@ -326,9 +316,25 @@ const sectionDataEn = {
   section3: {
     title: "Everyday Pregnancy Care",
     description: [
-      "This section focuses on what many people do day to day to support their health during pregnancy.",
-      "It covers food, rest, movement, medicines, stress, and common changes in your body. These everyday choices support your health and your baby’s development. You do not need to do everything perfectly. Small, steady steps still help you and your baby.",
-      "The Resource Guide includes programs and community supports related to pregnancy wellness that you may find helpful. You can return to this section anytime you have everyday questions or need reassurance.",
+      "This section is about day-to-day care during pregnancy.",
+      "You do not need to do everything perfectly.",
+      "Small steps matter.",
+      "In this section, you can learn about:",
+    ],
+    descriptionListItems: [
+      "Food and drinks",
+      "Rest and sleep",
+      "Movement and activity",
+      "Medicines and vitamins",
+      "Stress and common body changes",
+    ],
+    descriptionPreClosing: [
+      "These everyday choices support your health and your baby’s growth.",
+    ],
+    descriptionLinkText: "Need extra wellness support?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "The Resource Guide lists community programs and supports you may find helpful.",
     ],
     accordion: [
       {
@@ -460,11 +466,23 @@ const sectionDataEn = {
   section4: {
     title: "Paying for Care, Paperwork & Support",
     description: [
-      "This section helps explain how to pay for care and get support.",
-      "Many people need help with insurance, paperwork, or finding food, housing, transportation, or safety support. That is common — and help is available.",
-      "This section explains how systems work and what kinds of help may be available.",
-      "The Resource Guide lists organizations that can help with coverage, benefits, paperwork, and other support.",
-      "You can look at one part at a time. You do not need to understand everything to start.",
+      "Many people need help paying for care or filling out paperwork.",
+      "This is common—and help is available.",
+      "In this section, you can:",
+    ],
+    descriptionListItems: [
+      "Learn how to get health coverage",
+      "Understand what insurance can pay for",
+      "Get help with forms and applications",
+      "Find support for food, housing, transportation, or safety",
+    ],
+    descriptionPreClosing: [
+      "You can look at one part at a time. You do not need to understand everything to get started.",
+    ],
+    descriptionLinkText: "Need help right now?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "The Resource Guide connects you to organizations that help with coverage, benefits, and support.",
     ],
     accordion: [
       {
@@ -650,12 +668,23 @@ const sectionDataEs = {
     title: "Inicio, Seguridad y Decisiones sobre el Embarazo",
     description: [
       "Si está embarazada, cree que podría estarlo o acaba de enterarse, no está sola.",
-      "Las personas tienen muchos sentimientos diferentes al comienzo del embarazo.",
-      "Esta sección le ayuda a comenzar. Aquí encontrará qué hacer primero, cuándo buscar ayuda de inmediato e información sobre las opciones de embarazo.",
-      "Esta sección también incluye información sobre señales de advertencia, preocupaciones urgentes y situaciones especiales.",
-      "La Guía de Recursos puede conectarla con organizaciones si necesita pruebas, ayuda urgente o apoyo adicional.",
+      "Muchas personas se sienten inseguras, asustadas o abrumadas al principio. Esta sección le ayuda a comenzar.",
+      "En esta sección, usted puede:",
+    ],
+    descriptionListItems: [
+      "Aprenda qué hacer primero",
+      "Sepa cuándo buscar ayuda de inmediato",
+      "Aprenda sobre las opciones de embarazo",
+      "Entienda las señales de advertencia y preocupaciones urgentes",
+    ],
+    descriptionPreClosing: [
       "No tiene que decidir todo hoy.",
       "Lea lo que le resulte útil en este momento.",
+    ],
+    descriptionLinkText: "¿Necesita pruebas, ayuda urgente o apoyo adicional?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "La Guía de Recursos muestra lugares a los que llamar y acudir en busca de ayuda.",
     ],
     accordion: [
       {
@@ -771,21 +800,28 @@ const sectionDataEs = {
     ],
   },
   section2: {
-    title: "Atención Prenatal: Acceso y Cómo Funciona",
+    title: "La atención prenatal es la atención durante el embarazo",
     description: [
-      "Esta sección explica cómo funciona la atención prenatal.",
-      "Aprenderá:",
+      "Esta sección explica cómo funciona y cómo obtenerla.",
+      "En esta sección, usted puede:",
     ],
     descriptionListItems: [
-      "Dónde obtener atención prenatal",
-      "Qué sucede generalmente en las visitas",
-      "Cómo es la atención en diferentes partes del embarazo",
+      "Encontrar dónde obtener atención prenatal",
+      "Aprender qué sucede en las visitas",
+      "Entender la atención en diferentes etapas del embarazo",
+      "Aprender sobre la atención después del parto",
     ],
+    descriptionPreClosing: ["También encontrará consejos sobre:"],
+    descriptionPreClosingListItems: [
+      "Hacer preguntas",
+      "Entender la información médica",
+      "Expresarse durante la atención",
+    ],
+    descriptionPreClosingClosing: ["Usted es parte del equipo de atención."],
+    descriptionLinkText: "¿Busca clínicas o proveedores?",
+    descriptionLink: "/resources",
     descriptionClosing: [
-      "Esta sección también incluye información sobre la atención después del parto.",
-      "También encontrará orientación sobre cómo hacer preguntas, obtener ayuda para entender la información y hablar durante la atención. Usted es parte del equipo de atención.",
-      "La Guía de Recursos puede ayudarla a encontrar clínicas y servicios para la atención prenatal y posparto.",
-      "Esta sección se puede utilizar como referencia durante todo el embarazo y después del nacimiento.",
+      "La Guía de Recursos enumera opciones de atención prenatal y posparto cerca de usted.",
     ],
     accordion: [
       {
@@ -809,6 +845,9 @@ const sectionDataEs = {
       {
         title: "Elegir un Proveedor de Atención Prenatal",
         subtitle: "Dónde recibirá atención y dará a luz",
+        introlinkText:
+          "Vea la Guía de Recursos para Proveedores de Atención Prenatal entre Kearney y North Platte, Nebraska",
+        introlink: "/resources",
         intro: [
           "No todas las clínicas brindan atención prenatal.",
           "No todos los hospitales atienden partos.",
@@ -833,37 +872,6 @@ const sectionDataEs = {
         ],
         closing:
           "Conocer el plan con anticipación ayuda a reducir el estrés y las sorpresas.\nEstá bien hacer estas preguntas más de una vez.",
-      },
-      {
-        title: "Ubicaciones de Atención Prenatal",
-        subtitle: "Dónde obtener atención cercana",
-        intro:
-          "No necesita una referencia para comenzar la atención prenatal. Consulte la guía de recursos para obtener más información.",
-        introLink: "/resources",
-        listTitle: "Kearney",
-        listItems: [
-          "CHI Health Good Samaritan (Centro de Maternidad) — Trabajo de parto y parto + atención posparto (centro regional de maternidad).",
-          "Kearney Regional Medical Center (Embarazo y Bebé / Maternidad + NICU) — Trabajo de parto y parto con NICU Nivel II y apoyo de lactancia.",
-          "Family Practice Associates (Kearney) — Atención prenatal con médicos que atienden partos en hospitales de Kearney.",
-          "Contemporary Obstetrics & Gynecology (Kearney) — Clínica de OB/GYN que brinda atención durante el embarazo y servicios de salud para la mujer.",
-        ],
-        secondaryTitle: "Lexington",
-        secondaryList: [
-          "Lexington Regional Health Center (Obstetricia / Trabajo de Parto y Parto) — Atención prenatal hasta el parto y apoyo posparto.",
-          "Lexington Women’s Care — Clínica de OB/GYN con atención obstétrica de rutina y de alto riesgo.",
-          "Plum Creek Medical Group (Lexington) — Clínica de medicina familiar; puede proporcionar referencias/coordinación prenatal.",
-        ],
-        tertiaryTitle: "Cozad, Gothenburg y North Platte",
-        tertiaryList: [
-          "Cozad Community Medical Clinic — Clínica de medicina familiar que incluye atención prenatal.",
-          "Gothenburg Health (Salud de la Mujer / Servicios de Obstetricia) — Atención prenatal, trabajo de parto y parto, posparto + apoyo de lactancia.",
-          "Great Plains Health (Embarazo y Parto / Servicios de Maternidad) — Atención prenatal y servicios de parto en el hospital en North Platte.",
-          "North Platte OBGYN, PC — Clínica de OB/GYN que brinda atención durante el embarazo y partos (salud de la mujer).",
-        ],
-        quaternaryTitle: "Atención de Embarazo de Alto Riesgo",
-        quaternaryList: [
-          "CHI Health Medicina Materno-Fetal (TeleMFM) — Apoyo especializado para embarazos de alto riesgo (a menudo vía telesalud).",
-        ],
       },
       {
         title: "Cómo Es Generalmente la Atención Prenatal",
@@ -978,11 +986,27 @@ const sectionDataEs = {
     ],
   },
   section3: {
-    title: "Cuidados Diarios del Embarazo",
+    title: "Atención Diaria del Embarazo",
     description: [
-      "Esta sección se centra en lo que muchas personas hacen día a día para apoyar su salud durante el embarazo.",
-      "Cubre alimentación, descanso, movimiento, medicamentos, estrés y cambios comunes en su cuerpo. Estas elecciones diarias apoyan su salud y el desarrollo de su bebé. No necesita hacer todo perfectamente. Los pasos pequeños y constantes ayudan a usted y a su bebé.",
-      "La Guía de Recursos incluye programas y apoyos comunitarios relacionados con el bienestar en el embarazo que pueden resultarle útiles. Puede volver a esta sección en cualquier momento que tenga preguntas diarias o necesite tranquilidad.",
+      "Esta sección trata sobre la atención diaria durante el embarazo.",
+      "No necesita hacer todo a la perfección.",
+      "Los pequeños pasos importan.",
+      "En esta sección, puede aprender sobre:",
+    ],
+    descriptionListItems: [
+      "Alimentos y bebidas",
+      "Descanso y sueño",
+      "Movimiento y actividad",
+      "Medicamentos y vitaminas",
+      "Estrés y cambios corporales comunes",
+    ],
+    descriptionPreClosing: [
+      "Estas elecciones diarias apoyan su salud y el crecimiento de su bebé.",
+    ],
+    descriptionLinkText: "¿Necesita apoyo adicional para su bienestar?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "La Guía de Recursos enumera programas comunitarios y apoyos que pueden serle útiles.",
     ],
     accordion: [
       {
@@ -1115,13 +1139,25 @@ const sectionDataEs = {
     ],
   },
   section4: {
-    title: "Pago de la Atención, Trámites y Apoyo",
+    title: "Pago de Atención, Trámites y Apoyo",
     description: [
-      "Esta sección ayuda con el seguro, el papeleo y el apoyo adicional.",
-      "Muchas personas necesitan ayuda para pagar la atención, entender los formularios o encontrar apoyo para alimentos, vivienda, transporte o seguridad.",
-      "Eso es común — y hay ayuda disponible.",
-      "Puede mirar una parte a la vez.",
-      "No necesita entender todo para comenzar.",
+      "Muchas personas necesitan ayuda para pagar la atención o completar el papeleo.",
+      "Esto es común — y hay ayuda disponible.",
+      "En esta sección, usted puede:",
+    ],
+    descriptionListItems: [
+      "Aprender cómo obtener cobertura de salud",
+      "Entender qué puede pagar el seguro",
+      "Obtener ayuda con formularios y solicitudes",
+      "Encontrar apoyo para alimentos, vivienda, transporte o seguridad",
+    ],
+    descriptionPreClosing: [
+      "Puede mirar una parte a la vez. No necesita entender todo para comenzar.",
+    ],
+    descriptionLinkText: "¿Necesita ayuda ahora mismo?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "La Guía de Recursos le conecta con organizaciones que ayudan con cobertura, beneficios y apoyo.",
     ],
     accordion: [
       {
@@ -1308,12 +1344,24 @@ const sectionDataSo = {
     title: "Bilowga, Badbaadada & Go'aamada Uurka",
     description: [
       "Haddii aad uur leedahay, laga yaabo inaad uur leedahay, ama aad hadda ogaatay inaad uur leedahay, keligaa ma tihid.",
-      "Dadku waxay leeyihiin dareemo kala duwan bilowga uurka.",
-      "Qaybtani waxay kaa caawinaysaa inaad bilowdo. Halkan waxaad ka heli doontaa waxa marka hore la sameeyo, goorta la helo caawimaad degdeg ah, iyo macluumaad ku saabsan ikhtiyaarka uurka.",
-      "Qaybtani waxay sidoo kale ku jirtaa macluumaad ku saabsan calaamadaha digniinta, walaacyada degdegga ah, iyo xaaladaha gaarka ah.",
-      "Hagaha Kheyraadka wuxuu kugu xiri karaa ururada haddii aad u baahan tahay baaritaan, caawimaad degdeg ah, ama taageero dheeraad ah.",
+      "Dad badan ayaa dareema hubanti la'aan, cabsi, ama culeys bilowga. Qaybtani waxay kaa caawinaysaa inaad bilowdo.",
+      "Qaybtan, waxaad:",
+    ],
+    descriptionListItems: [
+      "Baran kartaa waxa marka hore la sameeyo",
+      "Ogaan kartaa goorta la helo caawimaad degdeg ah",
+      "Baran kartaa ikhtiyaarka uurka",
+      "Fahmi kartaa calaamadaha digniinta iyo walaacyada degdegga ah",
+    ],
+    descriptionPreClosing: [
       "Ma aha inaad maanta go'aan ka gaarto wax walba.",
       "Akhri waxa waxtar kuu leh hadda.",
+    ],
+    descriptionLinkText:
+      "Ma u baahan tahay baaritaan, caawimaad degdeg ah, ama taageero dheeraad ah?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "Hagaha Kheyraadka wuxuu muujinayaa meelaha la waco oo loo tago caawimaad.",
     ],
     accordion: [
       {
@@ -1431,21 +1479,32 @@ const sectionDataSo = {
     ],
   },
   section2: {
-    title: "Daryeelka Dhalmada Kahor: Helitaanka & Sida ay u Shaqeyso",
+    title: "Daryeelka dhalmada kahor waa daryeelka inta lagu jiro uurka",
     description: [
-      "Qaybtani waxay sharraxaysaa sida daryeelka dhalmada kahor u shaqeeyo.",
-      "Waxaad baran doontaa:",
+      "Qaybtani waxay sharraxaysaa sida uu u shaqeeyo iyo sida loo helo.",
+      "Qaybtan, waxaad:",
     ],
     descriptionListItems: [
-      "Halka laga helo daryeelka dhalmada kahor",
-      "Waxa badanaa ka dhaca booqashooyinka",
-      "Sida daryeelku u eg yahay qaybaha kala duwan ee uurka",
+      "Soo hel halka laga helo daryeelka dhalmada kahor",
+      "Baro waxa ka dhaca booqashooyinka",
+      "Fahmo daryeelka heerarka kala duwan ee uurka",
+      "Baro daryeelka dhalashada kadib",
     ],
+    descriptionPreClosing: [
+      "Waxaad sidoo kale heli doontaa talooyin ku saabsan:",
+    ],
+    descriptionPreClosingListItems: [
+      "Weydiinta su'aalo",
+      "Fahamka macluumaadka caafimaadka",
+      "Hadalka inta lagu jiro daryeelka",
+    ],
+    descriptionPreClosingClosing: [
+      "Waxaad tahay qayb ka mid ah kooxda daryeelka.",
+    ],
+    descriptionLinkText: "Ma raadinaysaa rugo caafimaad ama bixiyeyaal?",
+    descriptionLink: "/resources",
     descriptionClosing: [
-      "Qaybtani waxay sidoo kale ku jirtaa macluumaad ku saabsan daryeelka dhalmada kadib.",
-      "Waxaad sidoo kale heli doontaa hagitaan ku saabsan sida wax loo weydiiyo, loo helo caawimaad fahamka macluumaadka, iyo in la hadlo inta lagu jiro daryeelka. Waxaad tahay qayb ka mid ah kooxda daryeelka.",
-      "Hagaha Kheyraadka ayaa kaa caawin kara inaad hesho rugaha caafimaadka iyo adeegyada daryeelka dhalmada kahor iyo kadib.",
-      "Qaybtan waxaa loo isticmaali karaa tixraac ahaan inta lagu jiro uurka iyo dhalashada kadib.",
+      "Hagaha Kheyraadka wuxuu liis gareeyaa ikhtiyaarka daryeelka dhalmada kahor iyo dhalashada kadib ee kuu dhow.",
     ],
     accordion: [
       {
@@ -1470,6 +1529,9 @@ const sectionDataSo = {
       {
         title: "Doorashada Bixiyaha Daryeelka Dhalmada Kahor",
         subtitle: "Halka aad ka heli doonto daryeel oo aad ku umuli doonto",
+        introlinkText:
+          "Eeg Hagaha Kheyraadka ee Bixiyeyaasha Daryeelka Dhalmada Kahor inta u dhaxaysa Kearney iyo North Platte, Nebraska",
+        introlink: "/resources",
         intro: [
           "Dhammaan rugaha caafimaadku ma bixiyaan daryeelka dhalmada kahor.",
           "Dhammaan isbitaalladu ma umuliyaan dhallaanka.",
@@ -1494,37 +1556,6 @@ const sectionDataSo = {
         ],
         closing:
           "Ogaanshaha qorshaha ka hor waxay caawisaa dhimista walbahaarka iyo layaabka.\nWaa caadi in su'aalahan la is weydiiyo wax ka badan hal jeer.",
-      },
-      {
-        title: "Goobaha Daryeelka Dhalmada Kahor",
-        subtitle: "Halka laga helo daryeel dhow",
-        intro:
-          "Uma baahnid gudbin si aad u bilowdo daryeelka dhalmada kahor. Eeg hagaha kheyraadka wixii macluumaad dheeraad ah.",
-        introLink: "/resources",
-        listTitle: "Kearney",
-        listItems: [
-          "CHI Health Good Samaritan (Xarunta Umusha) — Foosha & dhalmada + daryeelka umusha kadib (xarunta umusha gobolka).",
-          "Kearney Regional Medical Center (Uurka & Ilmaha / Umusha + NICU) — Foosha & dhalmada oo leh heerka II NICU iyo taageerada naasnuujinta.",
-          "Family Practice Associates (Kearney) — Daryeelka dhalmada kahor oo lala yeesho dhakhaatiir ku umulisa isbitaallada Kearney.",
-          "Contemporary Obstetrics & Gynecology (Kearney) — Rugta OB/GYN oo bixisa daryeelka uurka iyo adeegyada caafimaadka haweenka.",
-        ],
-        secondaryTitle: "Lexington",
-        secondaryList: [
-          "Lexington Regional Health Center (Dhalmada / Foosha & Dhalmada) — Daryeelka dhalmada kahor ilaa dhalmada iyo taageerada umusha kadib.",
-          "Lexington Women’s Care — Rugta OB/GYN oo leh daryeelka dhalmada ee caadiga ah iyo midka khatarta sare leh.",
-          "Plum Creek Medical Group (Lexington) — Rugta daawada qoyska; waxay bixin kartaa gudbinta/isku-dubbaridka dhalmada kahor.",
-        ],
-        tertiaryTitle: "Cozad, Gothenburg & North Platte",
-        tertiaryList: [
-          "Cozad Community Medical Clinic — Rugta daawada qoyska oo ay ku jirto daryeelka dhalmada kahor.",
-          "Gothenburg Health (Caafimaadka Haweenka / Adeegyada OB) — Daryeelka dhalmada kahor, foosha & dhalmada, umusha kadib + taageerada naasnuujinta.",
-          "Great Plains Health (Uurka & Dhalmada / Adeegyada Umusha) — Daryeelka dhalmada kahor iyo adeegyada dhalmada ee isbitaalka ee North Platte.",
-          "North Platte OBGYN, PC — Rugta OB/GYN oo bixisa daryeelka uurka iyo dhalmada (caafimaadka haweenka).",
-        ],
-        quaternaryTitle: "Daryeelka Uurka Khatarta Sare leh",
-        quaternaryList: [
-          "CHI Health Maternal–Fetal Medicine (TeleMFM) — Taageero takhasus leh oo loogu talagalay uurka khatarta sare leh (badanaa iyada oo loo marayo telehealth).",
-        ],
       },
       {
         title: "Sida Caadiga ah Daryeelka Dhalmada Kahor U Eg Yahay",
@@ -1643,11 +1674,27 @@ const sectionDataSo = {
     ],
   },
   section3: {
-    title: "Daryeelka Uurka Maalinlaha ah",
+    title: "Daryeelka Maalinlaha ah ee Uurka",
     description: [
-      "Qaybtani waxay diiradda saartaa waxa dad badan ay sameeyaan maalin kasta si ay u taageeraan caafimaadkooda inta lagu jiro uurka.",
-      "Waxay daboolaysaa cuntada, nasashada, dhaqdhaqaaqa, daawooyinka, walbahaarka, iyo isbeddelada caadiga ah ee jirkaaga. Doorashooyinkan maalinlaha ah waxay taageeraan caafimaadkaaga iyo koritaanka ilmahaaga. Uma baahnid inaad wax walba si sax ah u sameyso. Tallaabooyin yaryar oo joogto ah ayaa weli caawinaya adiga iyo ilmahaaga.",
-      "Hagaha Kheyraadka waxaa ku jira barnaamijyo iyo taageerooyin bulsho oo la xiriira fiyoobida uurka oo laga yaabo inaad waxtar u hesho. Waxaad ku soo laaban kartaa qaybtan wakhti kasta oo aad qabtid su'aalo maalinle ah ama aad u baahan tahay kalsooni.",
+      "Qaybtani waxay ku saabsan tahay daryeelka maalinlaha ah inta lagu jiro uurka.",
+      "Uma baahnid inaad wax walba si qumman u sameyso.",
+      "Tallaabooyinka yaryar waa muhiim.",
+      "Qaybtan, waxaad:",
+    ],
+    descriptionListItems: [
+      "Cuntada iyo cabitaannada",
+      "Nasashada iyo hurdada",
+      "Dhaqdhaqaaqa iyo firfircoonida",
+      "Daawooyinka iyo fiitamiinada",
+      "Walbahaarka iyo isbeddelada jirka ee caadiga ah",
+    ],
+    descriptionPreClosing: [
+      "Doorashooyinkan maalinlaha ah waxay taageeraan caafimaadkaaga iyo koritaanka ilmahaaga.",
+    ],
+    descriptionLinkText: "Ma u baahan tahay taageero fiyoobi dheeraad ah?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "Hagaha Kheyraadka wuxuu liis gareeyaa barnaamijyada bulshada iyo taageerooyinka laga yaabo inaad waxtar u hesho.",
     ],
     accordion: [
       {
@@ -1793,11 +1840,23 @@ const sectionDataSo = {
   section4: {
     title: "Bixinta Daryeelka, Waraaqaha & Taageerada",
     description: [
-      "Qaybtani waxay kaa caawinaysaa caymiska, waraaqaha, iyo taageerada dheeraadka ah.",
-      "Dad badan ayaa u baahan caawimaad bixinta daryeelka, fahamka foomamka, ama helitaanka cuntada, guriyeynta, gaadiidka, ama taageerada badbaadada.",
-      "Taasi waa caadi — oo caawimaad ayaa la heli karaa.",
-      "Waxaad eegi kartaa hal qayb markiiba.",
-      "Uma baahnid inaad fahanto wax walba si aad u bilowdo.",
+      "Dad badan ayaa u baahan caawimaad bixinta daryeelka ama buuxinta waraaqaha.",
+      "Tani waa caadi — oo caawimaad ayaa la heli karaa.",
+      "Qaybtan, waxaad:",
+    ],
+    descriptionListItems: [
+      "Baran kartaa sida loo helo caymiska caafimaadka",
+      "Fahmi kartaa waxa caymisku bixin karo",
+      "Heli kartaa caawimaad foomamka iyo codsiyada",
+      "Heli kartaa taageero cuntada, guriyeynta, gaadiidka, ama badbaadada",
+    ],
+    descriptionPreClosing: [
+      "Waxaad eegi kartaa hal qayb markiiba. Uma baahnid inaad fahanto wax walba si aad u bilowdo.",
+    ],
+    descriptionLinkText: "Ma u baahan tahay caawimaad hadda?",
+    descriptionLink: "/resources",
+    descriptionClosing: [
+      "Hagaha Kheyraadka wuxuu kugu xirayaa ururada kaa caawiya caymiska, dheefaha, iyo taageerada.",
     ],
     accordion: [
       {
