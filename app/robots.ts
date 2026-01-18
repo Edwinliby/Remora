@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.remora-care.com/sitemap.xml",
+    sitemap: "https://www.remorahealth.com/sitemap.xml",
+    host: "https://www.remorahealth.com",
   };
 }

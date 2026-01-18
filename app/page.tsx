@@ -7,7 +7,7 @@ export default function Home() {
   const { t } = useLanguage();
 
   return (
-    <main className="min-h-screen bg-linear-to-b from-white to-[#A0A9FF]/10 pt-32 pb-20 px-6">
+    <main className="min-h-screen pt-32 pb-20 px-6">
       <div className="max-w-5xl mx-auto text-center space-y-12">
 
         {/* Hero Section */}

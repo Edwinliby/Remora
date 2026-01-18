@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: "Support for Anyone Who Is Pregnant or Might Be Pregnant",
     images: [
       {
-        url: 'https://sample-remora.netlify.app/logo.png',
+        url: 'https://remorahealth.com/logo.png',
         width: 800,
         height: 600,
         alt: 'Remora Logo',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Remora - Pregnancy Care & Support',
     description: "Support for Anyone Who Is Pregnant or Might Be Pregnant",
-    images: ['https://sample-remora.netlify.app/logo.png'],
+    images: ['https://remorahealth.com/logo.png'],
   },
 };
 

@@ -37,7 +37,15 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="mt-18 w-[90%] md:w-[80%] lg:w-[60%] mx-auto text-center text-[.7rem] text-gray-800">
+            <div className="flex flex-col items-center mt-16">
+                <p className="text-base text-gray-700">{t('footer.partnerWith')}</p>
+                <div className="flex justify-center gap-4">
+                    <Link href='https://www.remorahealth.com'><Image src="/logo.png" alt="Logo" width={100} height={100} className="w-24 h-24 p-5 object-contain" /></Link>
+                    <Link href='https://healthynebraska.org/'><Image src="/partnerLogo1.png" alt="Partner Logo 1" width={100} height={100} className="w-24 h-24 object-contain" /></Link>
+                </div>
+            </div>
+
+            <div className="mt-10 w-[90%] md:w-[80%] lg:w-[60%] mx-auto text-center text-[.7rem] text-gray-800">
                 {t('footer.disclaimer')}
                 <br /> <br />
                 {t('footer.updated')}

@@ -60,6 +60,7 @@ export const translations = {
       disclaimer:
         "Prepared by Remora Health to support people and families in central Nebraska and funded by Partnership for a Healthy Nebraska. This is a free, confidential community resource and is for information only, not medical or legal advice.",
       updated: "Updated: January 2026",
+      partnerWith: "Partner with",
     },
     closing: {
       notAlone: "You are not alone.",
@@ -167,6 +168,7 @@ export const translations = {
       disclaimer:
         "Waxaa diyaariyey Remora Health si loo taageero dadka iyo qoysaska ku nool bartamaha Nebraska waxaana maalgeliya Partnership for a Healthy Nebraska. Kani waa kheyraad bulsho oo bilaash ah, qarsoodi ah waana loogu talagalay macluumaad kaliya, maaha talo caafimaad ama sharci.",
       updated: "La cusbooneysiiyay: Janaayo 2026",
+      partnerWith: "Iskaashi la leh",
     },
     closing: {
       notAlone: "Keligood ma tihid.",
@@ -272,6 +274,7 @@ export const translations = {
       disclaimer:
         "Preparado por Remora Health para apoyar a personas y familias en el centro de Nebraska y financiado por Partnership for a Healthy Nebraska. Este es un recurso comunitario gratuito y confidencial y es solo para información, no es asesoramiento médico o legal.",
       updated: "Actualizado: Enero 2026",
+      partnerWith: "En colaboración con",
     },
     closing: {
       notAlone: "No estás sola.",
