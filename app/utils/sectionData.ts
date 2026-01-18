@@ -546,7 +546,14 @@ const sectionDataEn = {
           "Many people need help with the application — that is okay.",
           "You can apply in different ways:",
         ],
-        listItems: ["Online", "By phone", "In person"],
+        listItems: [
+          {
+            text: "Online at iserve.nebraska.gov",
+            link: "https://iserve.nebraska.gov"
+          },
+          "By phone",
+          "In person"
+        ],
         secondaryIntro: [
           "You can choose the option that works best for you.",
           "Apply even if documents are missing.",

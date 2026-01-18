@@ -58,8 +58,8 @@ export const translations = {
       rights: "Remora. All specific rights reserved.",
       categories: "Categories",
       disclaimer:
-        "Free, confidential community resource for Dawson County. Information only — not medical or legal advice.",
-      updated: "Updated: March 2025",
+        "Prepared by Remora Health to support people and families in central Nebraska and funded by Partnership for a Healthy Nebraska. This is a free, confidential community resource and is for information only, not medical or legal advice.",
+      updated: "Updated: January 2026",
     },
     closing: {
       notAlone: "You are not alone.",
@@ -82,6 +82,25 @@ export const translations = {
         email: "Email",
         message: "Message",
         submit: "Send Message",
+      },
+    },
+    resourcesPage: {
+      subtitle:
+        "Connect with trusted services and organizations in your community.",
+      filter: {
+        location: "Location",
+        category: "Category",
+        search: "Search...",
+        filteringByTag: "Filtering by tag:",
+        clearTag: "Clear tag",
+        noResults: "No resources found matching these filters.",
+        clearFilters: "Clear filters",
+      },
+      actions: {
+        call: "Call",
+        altPhone: "Alt Phone",
+        email: "Email",
+        website: "Website",
       },
     },
   },
@@ -146,8 +165,8 @@ export const translations = {
       rights: "Remora. Dhammaan xuquuqaha gaarka ah waa la xifdiyey.",
       categories: "Qaybaha",
       disclaimer:
-        "Kheyraadka bulshada ee bilaashka ah, qarsoodiga ah ee Degmada Dawson. Macluumaad kaliya — maaha talo caafimaad ama sharci.",
-      updated: "La cusbooneysiiyay: Maarso 2025",
+        "Waxaa diyaariyey Remora Health si loo taageero dadka iyo qoysaska ku nool bartamaha Nebraska waxaana maalgeliya Partnership for a Healthy Nebraska. Kani waa kheyraad bulsho oo bilaash ah, qarsoodi ah waana loogu talagalay macluumaad kaliya, maaha talo caafimaad ama sharci.",
+      updated: "La cusbooneysiiyay: Janaayo 2026",
     },
     closing: {
       notAlone: "Keligood ma tihid.",
@@ -170,6 +189,25 @@ export const translations = {
         email: "Iimaylka",
         message: "Fariinta",
         submit: "Dir Fariinta",
+      },
+    },
+    resourcesPage: {
+      subtitle:
+        "La xiriir adeegyada iyo ururada lagu kalsoon yahay ee bulshadaada.",
+      filter: {
+        location: "Goobta",
+        category: "Qeybta",
+        search: "Raadi...",
+        filteringByTag: "Sifeynta sumadda:",
+        clearTag: "Tirtir sumadda",
+        noResults: "Lama helin kheyraad u dhigma shaandhooyinkan.",
+        clearFilters: "Tirtir shaandhooyinka",
+      },
+      actions: {
+        call: "Wac",
+        altPhone: "Tel Kale",
+        email: "Iimayl",
+        website: "Websaydh",
       },
     },
   },
@@ -232,8 +270,8 @@ export const translations = {
       rights: "Remora. Todos los derechos específicos reservados.",
       categories: "Categorías",
       disclaimer:
-        "Recurso comunitario gratuito y confidencial para el condado de Dawson. Solo información, no asesoramiento médico o legal.",
-      updated: "Actualizado: Marzo 2025",
+        "Preparado por Remora Health para apoyar a personas y familias en el centro de Nebraska y financiado por Partnership for a Healthy Nebraska. Este es un recurso comunitario gratuito y confidencial y es solo para información, no es asesoramiento médico o legal.",
+      updated: "Actualizado: Enero 2026",
     },
     closing: {
       notAlone: "No estás sola.",
@@ -257,6 +295,26 @@ export const translations = {
         email: "Correo electrónico",
         message: "Mensaje",
         submit: "Enviar Mensaje",
+      },
+    },
+    resourcesPage: {
+      subtitle:
+        "Conéctese con servicios y organizaciones de confianza en su comunidad.",
+      filter: {
+        location: "Ubicación",
+        category: "Categoría",
+        search: "Buscar...",
+        filteringByTag: "Filtrando por etiqueta:",
+        clearTag: "Borrar etiqueta",
+        noResults:
+          "No se encontraron recursos que coincidan con estos filtros.",
+        clearFilters: "Borrar filtros",
+      },
+      actions: {
+        call: "Llamar",
+        altPhone: "Tel Alt",
+        email: "Correo",
+        website: "Sitio web",
       },
     },
   },

@@ -126,10 +126,7 @@ export default function HeroSection() {
                             />
                         </div>
 
-                        <span className="absolute top-[6px] left-1/2 z-30 flex h-8 w-8 md:h-12 md:w-12 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-[#D1D6FF] border-4 md:border-6 md:text-lg border-[#E6E8FF] text-primary font-bold">
-                            !
-                        </span>
-
+                        <span className="absolute top-[6px] left-1/2 z-30 flex h-8 w-8 -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-[#D1D6FF] border-4 md:border-6 md:text-lg border-[#E6E8FF] text-primary font-bold"/>
 
                         <div className="flex flex-col gap-4 py-6 md:py-12">
                             {

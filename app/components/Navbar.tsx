@@ -42,45 +42,45 @@ export default function Navbar() {
     const menuItems = [
         {
             category: t('navbar.menu.start'),
-            mainHref: "/#01",
+            mainHref: "/prenatalguide/#01",
             items: [
-                { label: t('navbar.items.gettingStarted'), href: "/#section-1-0" },
-                { label: t('navbar.items.thinkPregnant'), href: "/#section-1-1" },
-                { label: t('navbar.items.careRightAway'), href: "/#section-1-2" },
-                { label: t('navbar.items.extraHelp'), href: "/#section-1-3" },
-                { label: t('navbar.items.options'), href: "/#section-1-4" },
-                { label: t('navbar.items.whyPrenatal'), href: "/#section-1-5" }
+                { label: t('navbar.items.gettingStarted'), href: "/prenatalguide/#section-1-0" },
+                { label: t('navbar.items.thinkPregnant'), href: "/prenatalguide/#section-1-1" },
+                { label: t('navbar.items.careRightAway'), href: "/prenatalguide/#section-1-2" },
+                { label: t('navbar.items.extraHelp'), href: "/prenatalguide/#section-1-3" },
+                { label: t('navbar.items.options'), href: "/prenatalguide/#section-1-4" },
+                { label: t('navbar.items.whyPrenatal'), href: "/prenatalguide/#section-1-5" }
             ]
         },
         {
             category: t('navbar.menu.prenatal'),
-            mainHref: "/#02",
+            mainHref: "/prenatalguide/#02",
             items: [
-                { label: t('navbar.items.advocating'), href: "/#section-2-0" },
-                { label: t('navbar.items.choosingProvider'), href: "/#section-2-1" },
-                { label: t('navbar.items.locations'), href: "/#section-2-2" },
-                { label: t('navbar.items.whatLooksLike'), href: "/#section-2-3" }
+                { label: t('navbar.items.advocating'), href: "/prenatalguide/#section-2-0" },
+                { label: t('navbar.items.choosingProvider'), href: "/prenatalguide/#section-2-1" },
+                { label: t('navbar.items.locations'), href: "/prenatalguide/#section-2-2" },
+                { label: t('navbar.items.whatLooksLike'), href: "/prenatalguide/#section-2-3" }
             ]
         },
         {
             category: t('navbar.menu.everyday'),
-            mainHref: "/#03",
+            mainHref: "/prenatalguide/#03",
             items: [
-                { label: t('navbar.items.wellness'), href: "/#section-3-0" }
+                { label: t('navbar.items.wellness'), href: "/prenatalguide/#section-3-0" }
             ]
         },
         {
             category: t('navbar.menu.paying'),
-            mainHref: "/#04",
+            mainHref: "/prenatalguide/#04",
             items: [
-                { label: t('navbar.items.coverage'), href: "/#section-4-0" },
-                { label: t('navbar.items.specialSituations'), href: "/#section-4-1" },
-                { label: t('navbar.items.moreHelp'), href: "/#section-4-2" },
-                { label: t('navbar.items.applyCoverage'), href: "/#section-4-3" },
-                { label: t('navbar.items.marketplace'), href: "/#section-4-4" },
-                { label: t('navbar.items.documents'), href: "/#section-4-5" },
-                { label: t('navbar.items.waitingCoverage'), href: "/#section-4-6" },
-                { label: t('navbar.items.importantInfo'), href: "/#section-4-7" }
+                { label: t('navbar.items.coverage'), href: "/prenatalguide/#section-4-0" },
+                { label: t('navbar.items.specialSituations'), href: "/prenatalguide/#section-4-1" },
+                { label: t('navbar.items.moreHelp'), href: "/prenatalguide/#section-4-2" },
+                { label: t('navbar.items.applyCoverage'), href: "/prenatalguide/#section-4-3" },
+                { label: t('navbar.items.marketplace'), href: "/prenatalguide/#section-4-4" },
+                { label: t('navbar.items.documents'), href: "/prenatalguide/#section-4-5" },
+                { label: t('navbar.items.waitingCoverage'), href: "/prenatalguide/#section-4-6" },
+                { label: t('navbar.items.importantInfo'), href: "/prenatalguide/#section-4-7" }
             ]
         }
     ];
@@ -102,14 +102,14 @@ export default function Navbar() {
             className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ${(isScrolled && !isMenuOpen) ? "bg-white/50 backdrop-blur-sm shadow-xs" : "bg-transparent"
                 }`}
         >
-            <Link href="/" className="w-10 h-10 relative z-50">
+            <Link href="/prenatalguide" className="w-10 h-10 relative z-50">
                 <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
             </Link>
 
             {/* Desktop Center Links */}
             <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 gap-8 items-center">
                 <Link
-                    href="/"
+                    href="/prenatalguide"
                     className={`text-base font-medium transition-colors ${activeLink === '/' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
                     onClick={() => setActiveLink('/')}
                 >

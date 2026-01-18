@@ -1,330 +1,67 @@
 "use client";
 
 import Link from "next/link";
-import SectionCard from "./components/SectionCard";
-import ClosingSection from "./components/ClosingSection";
-import HeroSection from "./components/HeroSection";
 import { useLanguage } from "./context/LanguageContext";
 
-import { sectionData as allSectionData } from "./utils/sectionData";
-import AccordionGroup from "./components/AccordionGroup";
-
 export default function Home() {
-  const { t, language } = useLanguage();
-  const sectionData = allSectionData[language as keyof typeof allSectionData] || allSectionData.en;
-
-  const renderSectionContent = (item: any) => {
-    return (
-      <div className="space-y-2 text-xs md:text-sm text-[#3C3C43] leading-relaxed">
-        {item.introlinkText && item.introlink && (
-          <Link
-            href={item.introlink}
-            className="font-bold text-[var(--color-primary)] underline hover:text-[var(--color-primary)]/80 transition-colors block mb-2"
-          >
-            {item.introlinkText}
-          </Link>
-        )}
-
-        {item.intro && (Array.isArray(item.intro) ? item.intro.map((line: string, i: number) => <p key={i}>{line}</p>) : item.introLink ? <Link href={item.introLink} className="font-medium mb-2 text-primary underline block hover:text-primary/80 transition-colors">{item.intro}</Link> : <p>{item.intro}</p>)}
-
-        {(item.listTitle || item.listItems) && (
-          <div>
-            {item.listTitle && <p className="font-semibold mb-2">{item.listTitle}</p>}
-            {item.listItems && (
-              <ul className="list-disc pl-4 space-y-1">
-                {item.listItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-          </div>
-        )}
-
-        {(item.secondaryIntro || item.secondaryTitle || item.secondaryList) && (
-          <div className="mt-4">
-            {item.secondaryIntro && <p className="mb-2 md:w-3/4">{item.secondaryIntro}</p>}
-            {item.secondaryTitle && <p className="font-semibold mb-2">{item.secondaryTitle}</p>}
-            {item.secondaryList && (
-              <ul className="list-disc pl-5 space-y-1">
-                {item.secondaryList.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-          </div>
-        )}
-
-        {(item.tertiaryTitle || item.tertiaryList) && (
-          <div className="mt-4">
-            {item.tertiaryTitle && (
-              item.tertiaryLink ? (
-                <Link href={item.tertiaryLink} className="font-semibold mb-2 text-primary underline block hover:text-primary/80 transition-colors">
-                  {item.tertiaryTitle}
-                </Link>
-              ) : (
-                <p className="font-semibold mb-2">{item.tertiaryTitle}</p>
-              )
-            )}
-            {item.tertiaryIntro && <p className="mb-2">{item.tertiaryIntro}</p>}
-            {item.tertiaryList && (
-              <ul className="list-disc pl-5 space-y-1">
-                {item.tertiaryList.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-          </div>
-        )}
-
-        {(item.quaternaryTitle || item.quaternaryList) && (
-          <div className="mt-4">
-            {item.quaternaryTitle && <p className="font-semibold mb-2">{item.quaternaryTitle}</p>}
-            {item.quaternaryList && (
-              <ul className="list-disc pl-5 space-y-1">
-                {item.quaternaryList.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-          </div>
-        )}
-
-        {item.closing && <p className="font-medium whitespace-pre-line mt-4">{Array.isArray(item.closing) ? item.closing.join('\n') : item.closing}</p>}
-
-        {item.subAccordion && (
-          <div className="mt-6">
-            <AccordionGroup
-              items={item.subAccordion.map((sub: any) => ({ ...sub, variant: 'sub' }))}
-              renderContent={(subItem) => renderSectionContent(subItem)}
-            />
-          </div>
-        )}
-      </div>
-    );
-  };
+  const { t } = useLanguage();
 
   return (
-    <>
-      <main className="pb-10">
-        <HeroSection />
+    <main className="min-h-screen bg-linear-to-b from-white to-[#A0A9FF]/10 pt-32 pb-20 px-6">
+      <div className="max-w-5xl mx-auto text-center space-y-12">
 
-        {/* Section 1 */}
-        <SectionCard
-          number="01"
-          title={sectionData.section1.title}
-          description={sectionData.section1.description}
-          imageSrc="/1.png"
-          imageAlt="Pregnancy Journey"
-        >
-          <div className="leading-relaxed space-y-2 text-sm md:text-base text-[#3C3C43]">
-            {/* Additional Description Items for Section 1 */}
-            {(sectionData.section1 as any).descriptionListItems && (
-              <ul className="list-disc pl-4 space-y-1">
-                {(sectionData.section1 as any).descriptionListItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
+        {/* Hero Section */}
+        <div className="space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-700">
+          <h1 className="text-5xl md:text-7xl font-bold text-[var(--color-primary)] tracking-tight mb-2">
+            Remora
+          </h1>
+        </div>
 
-            {(sectionData.section1 as any).descriptionPreClosing && (
-              <div className="mt-2">
-                {(sectionData.section1 as any).descriptionPreClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)}
-              </div>
-            )}
+        {/* Navigation Cards */}
+        <div className="grid md:grid-cols-2 gap-6 md:gap-10 mt-16 max-w-4xl mx-auto">
 
-            {(sectionData.section1 as any).descriptionLinkText && (sectionData.section1 as any).descriptionLink && (
-              <div className="mt-4 mb-2">
-                <Link
-                  href={(sectionData.section1 as any).descriptionLink}
-                  className="font-semibold text-[var(--color-primary)] underline hover:text-[var(--color-primary)]/80 transition-colors"
-                >
-                  {(sectionData.section1 as any).descriptionLinkText}
-                </Link>
-              </div>
-            )}
-
-            {(sectionData.section1 as any).descriptionClosing && (
-              <div className="mt-2 text-[#3C3C43]">
-                {Array.isArray((sectionData.section1 as any).descriptionClosing)
-                  ? (sectionData.section1 as any).descriptionClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)
-                  : <p>{(sectionData.section1 as any).descriptionClosing}</p>
-                }
-              </div>
-            )}
-
-            <div className="mt-6 space-y-2">
-              <AccordionGroup
-                items={sectionData.section1.accordion}
-                renderContent={(item) => renderSectionContent(item)}
-                idPrefix="section-1"
-              />
+          {/* Prenatal Guide Card */}
+          <Link href="/prenatalguide"
+            className="group relative bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-gray-100 hover:border-[var(--color-primary)]/50 hover:shadow-xl hover:shadow-[var(--color-primary)]/10 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center gap-8"
+          >
+            <div className="w-24 h-24 bg-indigo-50/80 rounded-full flex items-center justify-center text-[var(--color-primary)] group-hover:scale-110 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-300 shadow-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
             </div>
-          </div>
-        </SectionCard>
-
-        {/* Section 2 */}
-        <SectionCard
-          number="02"
-          title={sectionData.section2.title}
-          description={sectionData.section2.description}
-          imageSrc="/2.png"
-          imageAlt="Prenatal Care"
-        >
-          <div className="leading-relaxed space-y-2 text-sm md:text-base text-[#3C3C43]">
-            {/* Extra content for Section 2 specifically */}
-            {(sectionData.section2 as any).descriptionListItems && (
-              <ul className="list-disc pl-4 space-y-1">
-                {(sectionData.section2 as any).descriptionListItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-
-            {(sectionData.section2 as any).descriptionPreClosing && (
-              <div className="mt-2">
-                {(sectionData.section2 as any).descriptionPreClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)}
-              </div>
-            )}
-
-            {(sectionData.section2 as any).descriptionPreClosingListItems && (
-              <ul className="list-disc pl-4 space-y-1">
-                {(sectionData.section2 as any).descriptionPreClosingListItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-
-            {(sectionData.section2 as any).descriptionPreClosingClosing && (
-              <div className="mt-2">
-                {(sectionData.section2 as any).descriptionPreClosingClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)}
-              </div>
-            )}
-
-            {(sectionData.section2 as any).descriptionLinkText && (sectionData.section2 as any).descriptionLink && (
-              <div className="mt-4 mb-2">
-                <Link
-                  href={(sectionData.section2 as any).descriptionLink}
-                  className="font-semibold text-[var(--color-primary)] underline hover:text-[var(--color-primary)]/80 transition-colors"
-                >
-                  {(sectionData.section2 as any).descriptionLinkText}
-                </Link>
-              </div>
-            )}
-
-            {(sectionData.section2 as any).descriptionClosing && (
-              <div className="mt-2">
-                {(sectionData.section2 as any).descriptionClosing.map((line: string, i: number) => <p key={i} className="mb-2">{line}</p>)}
-              </div>
-            )}
-
-            <div className="space-y-2 mt-6">
-              <AccordionGroup
-                items={sectionData.section2.accordion}
-                renderContent={(item) => renderSectionContent(item)}
-                idPrefix="section-2"
-              />
+            <div className="space-y-3">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#002853] group-hover:text-[var(--color-primary)] transition-colors">
+                {t('hero.badge')}
+              </h2>
+              <p className="text-gray-500 font-medium leading-relaxed">
+                {t('hero.introCard.text')[0].split('.')[0]}.
+              </p>
             </div>
-          </div>
-        </SectionCard>
+            <span className="mt-auto px-6 py-3 rounded-full bg-gray-50 text-[var(--color-primary)] font-bold flex items-center gap-2 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all">
+              View Guide <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </span>
+          </Link>
 
-        {/* Section 3 */}
-        <SectionCard
-          number="03"
-          title={sectionData.section3.title}
-          description={sectionData.section3.description}
-          imageSrc="/3.png"
-          imageAlt="Postnatal Care"
-        >
-          <div className="leading-relaxed space-y-2 text-sm md:text-base text-[#3C3C43]">
-            {/* Extra content for Section 3 */}
-            {(sectionData.section3 as any).descriptionListItems && (
-              <ul className="list-disc pl-4 space-y-1">
-                {(sectionData.section3 as any).descriptionListItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-
-            {(sectionData.section3 as any).descriptionPreClosing && (
-              <div className="mt-2 text-[#3C3C43]">
-                {Array.isArray((sectionData.section3 as any).descriptionPreClosing)
-                  ? (sectionData.section3 as any).descriptionPreClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)
-                  : <p>{(sectionData.section3 as any).descriptionPreClosing}</p>
-                }
-              </div>
-            )}
-
-            {(sectionData.section3 as any).descriptionLinkText && (sectionData.section3 as any).descriptionLink && (
-              <div className="mt-4 mb-2">
-                <Link
-                  href={(sectionData.section3 as any).descriptionLink}
-                  className="font-semibold text-[var(--color-primary)] underline hover:text-[var(--color-primary)]/80 transition-colors"
-                >
-                  {(sectionData.section3 as any).descriptionLinkText}
-                </Link>
-              </div>
-            )}
-
-            {(sectionData.section3 as any).descriptionClosing && (
-              <div className="mt-2 text-[#3C3C43]">
-                {Array.isArray((sectionData.section3 as any).descriptionClosing)
-                  ? (sectionData.section3 as any).descriptionClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)
-                  : <p>{(sectionData.section3 as any).descriptionClosing}</p>
-                }
-              </div>
-            )}
-
-            <div className="mt-6 space-y-2">
-              <AccordionGroup
-                items={sectionData.section3.accordion}
-                renderContent={(item) => renderSectionContent(item)}
-                idPrefix="section-3"
-              />
+          {/* Resources Card */}
+          <Link href="/resources"
+            className="group relative bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-gray-100 hover:border-[var(--color-primary)]/50 hover:shadow-xl hover:shadow-[var(--color-primary)]/10 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center gap-8"
+          >
+            <div className="w-24 h-24 bg-indigo-50/80 rounded-full flex items-center justify-center text-[var(--color-primary)] group-hover:scale-110 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-300 shadow-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
             </div>
-          </div>
-        </SectionCard>
-
-        {/* Section 4 */}
-        <SectionCard
-          number="04"
-          title={sectionData.section4.title}
-          description={sectionData.section4.description}
-          imageSrc="/4.png"
-          imageAlt="Support"
-        >
-          <div className="leading-relaxed space-y-2 text-sm md:text-base text-[#3C3C43]">
-            {/* Extra content for Section 4 */}
-            {(sectionData.section4 as any).descriptionListItems && (
-              <ul className="list-disc pl-4 space-y-1">
-                {(sectionData.section4 as any).descriptionListItems.map((li: string, i: number) => <li key={i}>{li}</li>)}
-              </ul>
-            )}
-
-            {(sectionData.section4 as any).descriptionPreClosing && (
-              <div className="mt-2 text-[#3C3C43]">
-                {Array.isArray((sectionData.section4 as any).descriptionPreClosing)
-                  ? (sectionData.section4 as any).descriptionPreClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)
-                  : <p>{(sectionData.section4 as any).descriptionPreClosing}</p>
-                }
-              </div>
-            )}
-
-            {(sectionData.section4 as any).descriptionLinkText && (sectionData.section4 as any).descriptionLink && (
-              <div className="mt-4 mb-2">
-                <Link
-                  href={(sectionData.section4 as any).descriptionLink}
-                  className="font-semibold text-[var(--color-primary)] underline hover:text-[var(--color-primary)]/80 transition-colors"
-                >
-                  {(sectionData.section4 as any).descriptionLinkText}
-                </Link>
-              </div>
-            )}
-
-            {(sectionData.section4 as any).descriptionClosing && (
-              <div className="mt-2 text-[#3C3C43]">
-                {Array.isArray((sectionData.section4 as any).descriptionClosing)
-                  ? (sectionData.section4 as any).descriptionClosing.map((line: string, i: number) => <p key={i} className="mb-1">{line}</p>)
-                  : <p>{(sectionData.section4 as any).descriptionClosing}</p>
-                }
-              </div>
-            )}
-
-            <div className="mt-6 space-y-2">
-              <AccordionGroup
-                items={sectionData.section4.accordion}
-                renderContent={(item) => renderSectionContent(item)}
-                idPrefix="section-4"
-              />
+            <div className="space-y-3">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#002853] group-hover:text-[var(--color-primary)] transition-colors">
+                {t('navbar.menu.resourceList')}
+              </h2>
+              <p className="text-gray-500 font-medium leading-relaxed">
+                {t('resourcesPage.subtitle')}
+              </p>
             </div>
-          </div>
-        </SectionCard>
+            <span className="mt-auto px-6 py-3 rounded-full bg-gray-50 text-[var(--color-primary)] font-bold flex items-center gap-2 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all">
+              Find Resources <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </span>
+          </Link>
 
-        <ClosingSection />
-      </main>
-    </>
+        </div>
+      </div>
+    </main>
   );
 }
