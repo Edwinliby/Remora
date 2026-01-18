@@ -131,7 +131,7 @@ const sectionDataEn = {
     ],
   },
   section2: {
-    title: "Prenatal care is care during pregnancy",
+    title: "Prenatal Care",
     description: [
       "This section explains how it works and how to get it.",
       "In this section, you can:",
@@ -549,10 +549,10 @@ const sectionDataEn = {
         listItems: [
           {
             text: "Online at iserve.nebraska.gov",
-            link: "https://iserve.nebraska.gov"
+            link: "https://iserve.nebraska.gov",
           },
           "By phone",
-          "In person"
+          "In person",
         ],
         secondaryIntro: [
           "You can choose the option that works best for you.",
@@ -807,7 +807,7 @@ const sectionDataEs = {
     ],
   },
   section2: {
-    title: "La atención prenatal es la atención durante el embarazo",
+    title: "Atención prenatal",
     description: [
       "Esta sección explica cómo funciona y cómo obtenerla.",
       "En esta sección, usted puede:",
@@ -1228,7 +1228,14 @@ const sectionDataEs = {
           "Muchas personas necesitan ayuda con la solicitud — eso está bien.",
           "Puede solicitar de diferentes maneras:",
         ],
-        listItems: ["En línea", "Por teléfono", "En persona"],
+        listItems: [
+          {
+            text: "En línea en iserve.nebraska.gov",
+            link: "https://iserve.nebraska.gov",
+          },
+          "Por teléfono",
+          "En persona",
+        ],
         secondaryIntro: [
           "Puede elegir la opción que mejor funcione para usted.",
           "Solicite incluso si faltan documentos.",
@@ -1486,7 +1493,7 @@ const sectionDataSo = {
     ],
   },
   section2: {
-    title: "Daryeelka dhalmada kahor waa daryeelka inta lagu jiro uurka",
+    title: "Daryeelka dhalmada ka hor",
     description: [
       "Qaybtani waxay sharraxaysaa sida uu u shaqeeyo iyo sida loo helo.",
       "Qaybtan, waxaad:",
@@ -1929,7 +1936,14 @@ const sectionDataSo = {
           "Dad badan ayaa u baahan caawimaad codsiga — taasi waa caadi.",
           "Waxaad u codsan kartaa siyaabo kala duwan:",
         ],
-        listItems: ["Online", "Taleefan", "Shaqsi ahaan"],
+        listItems: [
+          {
+            text: "Online ka iserve.nebraska.gov",
+            link: "https://iserve.nebraska.gov",
+          },
+          "Taleefan",
+          "Shaqsi ahaan",
+        ],
         secondaryIntro: [
           "Waxaad dooran kartaa ikhtiyaarka kuugu fiican.",
           "Codso xitaa haddii dukumentiyo maqan yihiin.",

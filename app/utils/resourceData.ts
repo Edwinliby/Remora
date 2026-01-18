@@ -104,7 +104,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "groceries"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "North Platte",
   },
@@ -119,7 +119,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "groceries"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "North Platte",
   },
@@ -135,7 +135,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["housing", "subsidies"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "North Platte",
   },
@@ -329,7 +329,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "referrals"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Kearney",
   },
@@ -345,7 +345,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "clothing"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Kearney",
   },
@@ -360,7 +360,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "basic needs"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Kearney",
   },
@@ -375,7 +375,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["housing"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Kearney",
   },
@@ -627,7 +627,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "referrals"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Lexington",
   },
@@ -642,7 +642,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food support", "clothing"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Lexington",
   },
@@ -658,7 +658,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food support", "clothing"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Lexington",
   },
@@ -673,7 +673,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["housing", "public housing"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Lexington",
   },
@@ -976,7 +976,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "groceries"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Cozad",
   },
@@ -991,7 +991,7 @@ export const PRENATAL_CONTACTS: ContactResource[] = [
 
     tags: ["food pantry", "groceries"],
 
-    category: "Food & Housing",
+    category: "Food & housing",
 
     city: "Gothenburg",
   },

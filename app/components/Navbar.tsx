@@ -103,7 +103,7 @@ export default function Navbar() {
                 }`}
         >
             <Link href="/prenatalguide" className="w-10 h-10 relative z-50">
-                <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
+                {/* <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" /> */}
             </Link>
 
             {/* Desktop Center Links */}

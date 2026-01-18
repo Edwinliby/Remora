@@ -345,10 +345,7 @@ export default function Resources() {
                                                 <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[var(--color-primary)] shadow-sm group-hover/btn:scale-110 transition-transform">
                                                     <FiGlobe className="w-3.5 h-3.5" />
                                                 </div>
-                                                <div className="flex flex-col">
-                                                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider group-hover/btn:text-indigo-200">{t('resourcesPage.actions.website')}</span>
-                                                    <span className="text-sm font-bold text-gray-900 group-hover/btn:text-white truncate max-w-[180px]">{resource.website}</span>
-                                                </div>
+                                                <span className="text-sm font-bold text-gray-900 group-hover/btn:text-white">{t('resourcesPage.actions.website')}</span>
                                             </div>
                                             <div className="w-6 h-6 rounded-full bg-black/5 flex items-center justify-center text-gray-400 group-hover/btn:bg-white/20 group-hover/btn:text-white transition-all">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg>
