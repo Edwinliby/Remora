@@ -116,7 +116,7 @@ export default function Navbar() {
                     {t('navbar.items.home')}
                 </Link>
                 <Link
-                    href="/resources"
+                    href="/prenatalguide/resources"
                     className={`text-base font-medium transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
                     onClick={() => setActiveLink('/resources')}
                 >
@@ -174,9 +174,9 @@ export default function Navbar() {
                         <Image src="/1.png" alt="Pregnancy Support" width={600} height={400} className="h-auto w-full object-cover" />
                     </div>
 
-                    <Link href="/resources" onClick={() => handleLinkClick('/resources')} className={`flex items-center justify-between mb-8 group cursor-pointer ${activeLink === '/resources' ? 'text-primary' : 'text-gray-800'}`}>
-                        <h2 className={`text-xl font-medium transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-800 group-hover:text-primary'}`}>{t('navbar.menu.resourceList')}</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 transition-colors ${activeLink === '/resources' ? 'text-primary' : 'text-gray-400 group-hover:text-primary'}`}>
+                    <Link href="/prenatalguide/resources" onClick={() => handleLinkClick('/prenatalguide/resources')} className={`flex items-center justify-between mb-8 group cursor-pointer ${activeLink === '/prenatalguide/resources' ? 'text-primary' : 'text-gray-800'}`}>
+                        <h2 className={`text-xl font-medium transition-colors ${activeLink === '/prenatalguide/resources' ? 'text-primary' : 'text-gray-800 group-hover:text-primary'}`}>{t('navbar.menu.resourceList')}</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-5 h-5 transition-colors ${activeLink === '/prenatalguide/resources' ? 'text-primary' : 'text-gray-400 group-hover:text-primary'}`}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                         </svg>
                     </Link>

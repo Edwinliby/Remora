@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import { FiMapPin, FiPhone, FiSearch, FiMail, FiTag, FiFilter, FiGlobe } from "react-icons/fi";
 
-import { resourceData } from "../utils/resourceData";
+import { resourceData } from "../../utils/resourceData";
 
 export default function Resources() {
     const { t, language } = useLanguage();

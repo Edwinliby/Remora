@@ -17,7 +17,7 @@ const sectionDataEn = {
       "Read what feels helpful right now.",
     ],
     descriptionLinkText: "Need testing, urgent help, or extra support?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "The Resource Guide shows places to call and go for help.",
     ],
@@ -86,7 +86,7 @@ const sectionDataEn = {
         secondaryTitle: "You do not have to handle this alone.",
         tertiaryTitle:
           "Support is available. Please see the resource guide for local resources.",
-        tertiaryLink: "/resources",
+        tertiaryLink: "/prenatalguide/resources",
       },
       {
         title: "Your pregnancy options",
@@ -150,7 +150,7 @@ const sectionDataEn = {
     ],
     descriptionPreClosingClosing: ["You are part of the care team."],
     descriptionLinkText: "Looking for clinics or providers?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "The Resource Guide lists prenatal and after-birth care options near you.",
     ],
@@ -178,7 +178,7 @@ const sectionDataEn = {
         subtitle: "Where you'll get care and give birth",
         introlinkText:
           "See the Resource Guide for Prenatal Care Providers between Kearney and North Platte, Nebraska",
-        introlink: "/resources",
+        introlink: "/prenatalguide/resources",
         intro: [
           "Not all clinics provide prenatal care.",
           "Not all hospitals deliver babies.",
@@ -332,7 +332,7 @@ const sectionDataEn = {
       "These everyday choices support your health and your baby’s growth.",
     ],
     descriptionLinkText: "Need extra wellness support?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "The Resource Guide lists community programs and supports you may find helpful.",
     ],
@@ -480,7 +480,7 @@ const sectionDataEn = {
       "You can look at one part at a time. You do not need to understand everything to get started.",
     ],
     descriptionLinkText: "Need help right now?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "The Resource Guide connects you to organizations that help with coverage, benefits, and support.",
     ],
@@ -689,7 +689,7 @@ const sectionDataEs = {
       "Lea lo que le resulte útil en este momento.",
     ],
     descriptionLinkText: "¿Necesita pruebas, ayuda urgente o apoyo adicional?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "La Guía de Recursos muestra lugares a los que llamar y acudir en busca de ayuda.",
     ],
@@ -762,7 +762,7 @@ const sectionDataEs = {
         secondaryTitle: "No tiene que manejar esto sola.",
         tertiaryTitle:
           "Hay apoyo disponible. Consulte la guía de recursos para ver los recursos locales.",
-        tertiaryLink: "/resources",
+        tertiaryLink: "/prenatalguide/resources",
       },
       {
         title: "Sus opciones de embarazo",
@@ -826,7 +826,7 @@ const sectionDataEs = {
     ],
     descriptionPreClosingClosing: ["Usted es parte del equipo de atención."],
     descriptionLinkText: "¿Busca clínicas o proveedores?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "La Guía de Recursos enumera opciones de atención prenatal y posparto cerca de usted.",
     ],
@@ -854,7 +854,7 @@ const sectionDataEs = {
         subtitle: "Dónde recibirá atención y dará a luz",
         introlinkText:
           "Vea la Guía de Recursos para Proveedores de Atención Prenatal entre Kearney y North Platte, Nebraska",
-        introlink: "/resources",
+        introlink: "/prenatalguide/resources",
         intro: [
           "No todas las clínicas brindan atención prenatal.",
           "No todos los hospitales atienden partos.",
@@ -1011,7 +1011,7 @@ const sectionDataEs = {
       "Estas elecciones diarias apoyan su salud y el crecimiento de su bebé.",
     ],
     descriptionLinkText: "¿Necesita apoyo adicional para su bienestar?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "La Guía de Recursos enumera programas comunitarios y apoyos que pueden serle útiles.",
     ],
@@ -1162,7 +1162,7 @@ const sectionDataEs = {
       "Puede mirar una parte a la vez. No necesita entender todo para comenzar.",
     ],
     descriptionLinkText: "¿Necesita ayuda ahora mismo?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "La Guía de Recursos le conecta con organizaciones que ayudan con cobertura, beneficios y apoyo.",
     ],
@@ -1373,7 +1373,7 @@ const sectionDataSo = {
     ],
     descriptionLinkText:
       "Ma u baahan tahay baaritaan, caawimaad degdeg ah, ama taageero dheeraad ah?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "Hagaha Kheyraadka wuxuu muujinayaa meelaha la waco oo loo tago caawimaad.",
     ],
@@ -1448,7 +1448,7 @@ const sectionDataSo = {
         secondaryTitle: "Ma aha inaad keligaa xalliso tan.",
         tertiaryTitle:
           "Taageero ayaa la heli karaa. Fadlan eeg hagaha kheyraadka ee agabka maxalliga ah.",
-        tertiaryLink: "/resources",
+        tertiaryLink: "/prenatalguide/resources",
       },
       {
         title: "Ikhtiyaarkaaga uurka",
@@ -1516,7 +1516,7 @@ const sectionDataSo = {
       "Waxaad tahay qayb ka mid ah kooxda daryeelka.",
     ],
     descriptionLinkText: "Ma raadinaysaa rugo caafimaad ama bixiyeyaal?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "Hagaha Kheyraadka wuxuu liis gareeyaa ikhtiyaarka daryeelka dhalmada kahor iyo dhalashada kadib ee kuu dhow.",
     ],
@@ -1545,7 +1545,7 @@ const sectionDataSo = {
         subtitle: "Halka aad ka heli doonto daryeel oo aad ku umuli doonto",
         introlinkText:
           "Eeg Hagaha Kheyraadka ee Bixiyeyaasha Daryeelka Dhalmada Kahor inta u dhaxaysa Kearney iyo North Platte, Nebraska",
-        introlink: "/resources",
+        introlink: "/prenatalguide/resources",
         intro: [
           "Dhammaan rugaha caafimaadku ma bixiyaan daryeelka dhalmada kahor.",
           "Dhammaan isbitaalladu ma umuliyaan dhallaanka.",
@@ -1706,7 +1706,7 @@ const sectionDataSo = {
       "Doorashooyinkan maalinlaha ah waxay taageeraan caafimaadkaaga iyo koritaanka ilmahaaga.",
     ],
     descriptionLinkText: "Ma u baahan tahay taageero fiyoobi dheeraad ah?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "Hagaha Kheyraadka wuxuu liis gareeyaa barnaamijyada bulshada iyo taageerooyinka laga yaabo inaad waxtar u hesho.",
     ],
@@ -1868,7 +1868,7 @@ const sectionDataSo = {
       "Waxaad eegi kartaa hal qayb markiiba. Uma baahnid inaad fahanto wax walba si aad u bilowdo.",
     ],
     descriptionLinkText: "Ma u baahan tahay caawimaad hadda?",
-    descriptionLink: "/resources",
+    descriptionLink: "/prenatalguide/resources",
     descriptionClosing: [
       "Hagaha Kheyraadka wuxuu kugu xirayaa ururada kaa caawiya caymiska, dheefaha, iyo taageerada.",
     ],

@@ -14,8 +14,8 @@ export default function Footer() {
                     <p className="mb-4 text-xs text-gray-700">{t('footer.explore')}</p>
                     <div className="space-y-2 text-black flex flex-col">
                         <Link href="/prenatalguide">{t('footer.home')}</Link>
-                        <Link href="/resources">{t('footer.resources')}</Link>
-                        <Link href="/contact">{t('footer.contact')}</Link>
+                        <Link href="/prenatalguide/resources">{t('footer.resources')}</Link>
+                        <Link href="/prenatalguide/contact">{t('footer.contact')}</Link>
                     </div>
                 </div>
                 <div className="hidden md:block">

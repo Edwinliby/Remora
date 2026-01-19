@@ -41,7 +41,7 @@ export default function Home() {
           </Link>
 
           {/* Resources Card */}
-          <Link href="/resources"
+          <Link href="/prenatalguide/resources"
             className="group relative bg-white p-8 md:p-12 rounded-[2rem] shadow-sm border border-gray-100 hover:border-[var(--color-primary)]/50 hover:shadow-xl hover:shadow-[var(--color-primary)]/10 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center gap-8"
           >
             <div className="w-24 h-24 bg-indigo-50/80 rounded-full flex items-center justify-center text-[var(--color-primary)] group-hover:scale-110 group-hover:bg-[var(--color-primary)] group-hover:text-white transition-all duration-300 shadow-inner">
