@@ -90,7 +90,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className="w-full md:w-fit flex flex-col items-center justify-center gap-8 mt-6">
-                    <Link href='/resources' className="rounded-lg bg-primary w-[95%] px-8 py-4 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
+                    <Link href='/prenatalguide/resources' className="rounded-lg bg-primary w-[95%] px-8 py-4 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95">
                         {t('hero.cta')}
                     </Link>
                     {/* Language buttons moved to bottom of section */}<div className="flex justify-center gap-4 text-xs font-medium text-primary pb-10">
