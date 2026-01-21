@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -9,6 +11,9 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const { t } = useLanguage();
+    const pathname = usePathname();
+
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -96,6 +101,8 @@ export default function Navbar() {
         setActiveLink(href);
         setIsMenuOpen(false);
     };
+
+    if (pathname === "/") return null;
 
     return (
         <header

@@ -1,11 +1,16 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import Image from "next/image";
 import { useLanguage } from "../context/LanguageContext";
 import Link from "next/link";
 
 export default function Footer() {
     const { t, setLanguage } = useLanguage();
+    const pathname = usePathname();
+
+    if (pathname === "/") return null;
 
     return (
         <footer className="px-6 pb-4 text-sm text-gray-500">
